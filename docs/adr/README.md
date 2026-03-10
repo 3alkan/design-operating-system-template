@@ -1,26 +1,58 @@
+---
+artifact_type: adr-guide
+artifact_id: ADR-0000
+status: active
+owner: "[MAINTAINER_EMAIL]"
+related_ids:
+  - ADR-0001
+  - CMP-001
+assumptions:
+  - "[ASSUMPTION] Structural decisions worth preserving will exist even in stack-independent designs."
+open_questions:
+  - "[OPEN QUESTION] Whether future versions need ADR templates for reversible experiments."
+---
+
 # ADRs
 
-Architecture Decision Records (ADRs) capture significant technical and structural decisions.
+## Purpose
+- Capture design decisions that materially shape boundaries, contracts, cross-cutting rules, or operational posture.
 
 ## When ADRs Are Required
-- New architectural pattern or major boundary change.
-- Interface/contract changes across components.
-- Cross-cutting policy changes (security, observability, versioning, error handling).
-- Decisions with long-term consequences or notable tradeoffs.
+- A structural boundary or deployment shape is fixed.
+- A contract, consistency model, or versioning rule is fixed.
+- A security, observability, or error-handling policy is fixed.
+- A tradeoff has long-term consequences or closes meaningful alternatives.
 
 ## Naming Scheme
-- Files: `NNNN-short-title.md` (zero-padded).
-- Example: `0001-interface-versioning-policy.md`.
+- Files: `NNNN-short-title.md`
+- IDs inside the file: `ADR-NNNN`
 
 ## Lifecycle
-1. Proposed
-2. Accepted
-3. Superseded (link replacement ADR)
-4. Rejected
+1. `draft`
+2. `candidate`
+3. `accepted`
+4. `superseded`
+5. `deprecated`
 
 ## Authoring Rules
 - Use `0000-template.md`.
+- Include impacted artifact IDs.
 - Include at least two alternatives.
-- Record rejected options and reasoning.
-- Add follow-ups/open questions when decision is partial.
+- Record rejected options and consequences.
+- Link the ADR in `docs/09-traceability.md`.
 
+## Inputs
+- Architecture, contracts, quality, and operations artifacts.
+
+## Outputs
+- Durable design decisions that remove ambiguity for downstream implementation.
+
+## Assumptions
+- Most completed instances should have at least two accepted ADRs.
+
+## Open Questions
+- Whether ADR supersession should automatically update traceability notes.
+
+## Related IDs
+- `ADR-0001`
+- `CMP-001`
