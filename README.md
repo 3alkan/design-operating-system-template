@@ -2,7 +2,7 @@
 
 Tech-stack-independent design-system template for defining a product end to end in a form that is abstractly implementation-ready.
 
-Current DOS version: `0.2.0`
+Current DOS version: `0.3.0`
 
 ## What This Template Is
 - A design operating system, not a loose docs repository.
