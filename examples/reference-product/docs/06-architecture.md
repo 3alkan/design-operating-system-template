@@ -119,7 +119,7 @@ sequenceDiagram
 - Observability: `Core commands and events emit success, failure, and lag signals tied to request and correlation identifiers.`
 - Configuration and secrets: `Policy definitions, integration credentials, and notification routing are managed as configuration, not embedded in request data.`
 - Error handling: `Validation and business rule failures are synchronous; downstream failures are retried and escalated operationally without losing committed local state.`
-- Versioning and compatibility: `Contract evolution follows the policy in `ADR-0002` and uses additive change by default.`
+- Versioning and compatibility: Contract evolution follows the policy in `ADR-0002` and uses additive change by default.
 
 ## Risks
 | Risk ID | Risk | Impact | Mitigation |

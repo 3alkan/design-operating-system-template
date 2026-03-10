@@ -23,7 +23,7 @@ open_questions:
 - Each core artifact retains `Purpose`, `Inputs`, `Outputs`, `Assumptions`, `Open Questions`, and `Related IDs`.
 
 ## Artifact ID Scheme
-- This example uses `SYS-1xx`, `ACT-1xx`, `GOAL-1xx`, `CON-1xx`, `DOM-1xx`, `INV-1xx`, `SCN-1xx`, `CAP-1xx`, `CNT-1xx`, `CMP-1xx`, `NFR-1xx`, `OPS-1xx`, `RISK-1xx`, `ADR-000x`, and `CHK-1xx`.
+- This example uses `SPEC-1xx`, `SYS-1xx`, `ACT-1xx`, `GOAL-1xx`, `CON-1xx`, `DOM-1xx`, `INV-1xx`, `SCN-1xx`, `CAP-1xx`, `CNT-1xx`, `CMP-1xx`, `NFR-1xx`, `OPS-1xx`, `RISK-1xx`, `ADR-000x`, and `CHK-1xx`.
 
 ## Status Values
 - Core artifacts and ADRs in this example are `accepted`.

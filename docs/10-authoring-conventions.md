@@ -39,6 +39,7 @@ Core spine documents must preserve their titled sections exactly. Each document 
 Artifact-specific sections may add more detail, but the required sections must remain present.
 
 ## Artifact ID Scheme
+- `SPEC-###`: template or project authoring conventions
 - `SYS-###`: system purpose or template-level statements
 - `ACT-###`: actor definitions
 - `GOAL-###`: goals and success criteria

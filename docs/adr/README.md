@@ -1,6 +1,6 @@
 ---
 artifact_type: adr-guide
-artifact_id: ADR-0000
+artifact_id: SPEC-002
 status: active
 owner: "[MAINTAINER_EMAIL]"
 related_ids:

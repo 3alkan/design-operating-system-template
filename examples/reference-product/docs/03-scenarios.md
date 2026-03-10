@@ -59,7 +59,7 @@ open_questions:
   3. `CMP-102` updates local request and task state if the external status changed.
   4. `CMP-104` records the reconciliation event and notifies affected actors if state changes.
 - Alternate flow: `If the external system has no record, the task is marked for manual investigation.`
-- Failure behavior: `Integration failure keeps the request in `approved` or `fulfillment_failed` and raises an operator alert.`
+- Failure behavior: Integration failure keeps the request in `approved` or `fulfillment_failed` and raises an operator alert.
 - Success outcome: `The local request state matches the best known fulfillment truth.`
 
 ## Runtime Notes
