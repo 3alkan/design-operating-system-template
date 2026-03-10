@@ -2,7 +2,7 @@
 artifact_type: product-scope
 artifact_id: GOAL-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - ACT-001
   - CON-001

@@ -2,7 +2,7 @@
 artifact_type: system-purpose
 artifact_id: SYS-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - GOAL-001
   - CHK-001
@@ -39,7 +39,7 @@ open_questions:
 - Goals, scenarios, capabilities, contracts, architecture, quality, and operations are defined.
 - Structural decisions are captured in ADRs.
 - Traceability links all critical design artifacts.
-- Instance validation passes with no critical placeholders.
+- Manual artifact-consistency review passes with no critical placeholders.
 
 ## Inputs
 - Repository mission and intended users.

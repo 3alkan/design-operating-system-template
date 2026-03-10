@@ -2,7 +2,7 @@
 artifact_type: adr-guide
 artifact_id: SPEC-002
 status: active
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - ADR-0001
   - CMP-001

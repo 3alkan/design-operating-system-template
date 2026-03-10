@@ -2,7 +2,7 @@
 artifact_type: operations
 artifact_id: OPS-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - NFR-101
   - RISK-101

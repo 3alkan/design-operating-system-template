@@ -2,7 +2,7 @@
 artifact_type: quality
 artifact_id: NFR-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - CAP-101
   - CHK-101

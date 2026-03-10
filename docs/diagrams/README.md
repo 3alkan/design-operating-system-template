@@ -2,7 +2,7 @@
 artifact_type: diagram-policy
 artifact_id: PAT-900
 status: active
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CMP-001
   - SCN-001

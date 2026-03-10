@@ -2,7 +2,7 @@
 artifact_type: template-spec
 artifact_id: SPEC-001
 status: active
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - SYS-001
 assumptions:
@@ -55,7 +55,7 @@ Artifact-specific sections may add more detail, but the required sections must r
 - `RISK-###`: risks
 - `ADR-####`: architecture decision records
 - `PAT-###`: reusable patterns
-- `CHK-###`: validation or review checks
+- `CHK-###`: review or verification checks
 
 IDs must be unique within a completed project instance.
 
@@ -79,14 +79,15 @@ Use:
 Allowed placeholder tokens:
 - `[PROJECT_NAME]`
 - `[PROJECT_DESCRIPTION]`
-- `[MAINTAINER_EMAIL]`
+- `[PROJECT_CONTACT_EMAIL]`
+- `PROJECT_NAME_DESIGN_VERSION`
 - `[TBD]`
 - `[ASSUMPTION]`
 - `[OPEN QUESTION]`
 
 Rules:
-- Template mode allows all listed placeholders.
-- Instance mode forbids unresolved placeholders in core artifacts, ADRs, and traceability data.
+- The DOS repo may keep template placeholders where the template is intentionally generic.
+- Downstream project instances should resolve project placeholders and critical design placeholders before Gate 2.
 - Placeholder text must never replace an artifact ID.
 
 ## Traceability Rules
@@ -104,19 +105,19 @@ Rules:
 - Keep contracts abstract: define intent, inputs, outputs, errors, and guarantees without binding to a transport or stack unless an ADR fixes it.
 - Record open design gaps explicitly rather than hiding them in prose.
 
-## Validation Contract
-- Root template content must pass `python scripts/validate_template.py --mode template --root .`.
-- Completed instances must pass `python scripts/validate_template.py --mode instance --root <path>`.
-- Validation covers file presence, headings, front matter keys, ID uniqueness, status validity, cross-reference integrity, ADR minimums, traceability coverage, and placeholder policy.
+## Review Contract
+- Review the root DOS surfaces whenever template structure, patterns, examples, or contributor workflow change.
+- Review downstream project instances for artifact consistency before claiming Gate 2 readiness.
+- Review covers file presence, headings, front matter keys, ID consistency, cross-reference integrity, ADR minimums, traceability coverage, and placeholder policy.
 
 ## Inputs
 - Template artifact definitions.
 - Repo contribution workflow.
-- Validator expectations.
+- Manual review expectations.
 
 ## Outputs
 - Stable authoring rules for all documents in this repository.
-- A machine-checkable contract for template and instance validation.
+- A consistent review contract for the DOS repo and downstream project instances.
 
 ## Assumptions
 - Downstream implementers may choose different stacks while honoring the same abstract design.

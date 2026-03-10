@@ -2,7 +2,7 @@
 artifact_type: quality
 artifact_id: NFR-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CAP-001
   - CHK-001

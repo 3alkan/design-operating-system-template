@@ -2,7 +2,7 @@
 artifact_type: template-spec
 artifact_id: SPEC-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - SYS-101
 assumptions:
@@ -41,8 +41,9 @@ open_questions:
 - Update traceability alongside any structural or behavior change.
 - Preserve stack independence even when implementation planning begins.
 
-## Validation Contract
-- The reference product must pass `python scripts/validate_template.py --mode instance --root examples/reference-product`.
+## Review Contract
+- The reference product is reviewed manually as DOS teaching material rather than treated as default downstream product scope.
+- Review should confirm that the example still demonstrates coherent goals, scenarios, capabilities, contracts, architecture, and traceability.
 
 ## Inputs
 - The root template conventions and the completed example artifacts.
@@ -52,6 +53,7 @@ open_questions:
 
 ## Assumptions
 - The example is consumed as a finished design package rather than a starting skeleton.
+- The example teaches DOS structure and quality expectations without defining downstream scope by default.
 
 ## Open Questions
 - None.

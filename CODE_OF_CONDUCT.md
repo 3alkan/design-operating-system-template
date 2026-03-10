@@ -27,7 +27,7 @@ This Code of Conduct applies within project spaces and in public spaces when an 
 is officially representing the project.
 
 ## Enforcement
-Report unacceptable behavior to: [MAINTAINER_EMAIL].
+Report unacceptable behavior to: [PROJECT_CONTACT_EMAIL].
 All reports will be reviewed and investigated promptly and fairly.
 
 ## Attribution

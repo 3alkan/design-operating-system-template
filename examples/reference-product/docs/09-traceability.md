@@ -2,7 +2,7 @@
 artifact_type: traceability
 artifact_id: CHK-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - GOAL-101
   - SCN-101

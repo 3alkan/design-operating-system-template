@@ -30,7 +30,10 @@ assignees: []
 - Contracts, components, or checks affected: [TBD]
 - ADR needed: [Yes/No] ([TBD])
 
-## Validation Expectation
-- Template mode only
-- Instance mode only
-- Both modes
+## Surface Focus
+- Root template only
+- Reference example only
+- Both surfaces
+
+## Review Expectation
+- Review steps or evidence to use: [TBD]

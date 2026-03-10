@@ -2,7 +2,7 @@
 artifact_type: capabilities
 artifact_id: CAP-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - SCN-001
   - CNT-001
@@ -44,7 +44,7 @@ open_questions:
 - Scenarios from `docs/03-scenarios.md`.
 
 ## Outputs
-- A capability inventory that can be mapped to contracts, components, and validation checks.
+- A capability inventory that can be mapped to contracts, components, and review or verification checks.
 
 ## Assumptions
 - Capabilities are stable enough to serve as a primary traceability layer.

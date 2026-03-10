@@ -2,7 +2,7 @@
 artifact_type: adr
 artifact_id: ADR-0000
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CMP-001
 assumptions:
@@ -55,7 +55,7 @@ open_questions:
 - The chosen path will remain valid long enough to justify recording it.
 
 ## Open Questions
-- Which follow-up changes or validations are required after acceptance.
+- Which follow-up changes or reviews are required after acceptance.
 
 ## Related IDs
 - `CMP-001`

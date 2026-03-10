@@ -8,7 +8,7 @@ This is a template repository. Security issues may include:
 
 ## How To Report
 - Preferred: GitHub Security Advisories for this repository.
-- Alternative: email [MAINTAINER_EMAIL].
+- Alternative: email [PROJECT_CONTACT_EMAIL].
 
 Please include reproduction steps, affected files, and impact.
 

@@ -2,7 +2,7 @@
 artifact_type: system-purpose
 artifact_id: SYS-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - GOAL-101
   - CHK-101
@@ -38,7 +38,7 @@ open_questions:
 - Actors, goals, scenarios, capabilities, contracts, architecture, quality checks, and operations are all defined.
 - Structural decisions are captured in accepted ADRs.
 - Traceability covers every in-scope goal and capability.
-- The instance passes validation with no unresolved placeholders.
+- Manual artifact-consistency review passes with no unresolved placeholders.
 
 ## Inputs
 - The reference product scope and operational needs.

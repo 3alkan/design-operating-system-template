@@ -2,7 +2,7 @@
 artifact_type: scenarios
 artifact_id: SCN-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - ACT-001
   - CAP-001

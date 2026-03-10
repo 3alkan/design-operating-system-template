@@ -2,7 +2,7 @@
 artifact_type: architecture
 artifact_id: CMP-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - CNT-101
   - SCN-101

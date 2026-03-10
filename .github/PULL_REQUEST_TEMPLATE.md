@@ -4,8 +4,13 @@
 
 ## Plan
 - Files or artifact IDs touched:
-- Validation approach:
+- Review or test approach:
 - Design-system impact:
+
+## Surface Impact
+- [ ] Root template only
+- [ ] Reference example only
+- [ ] Both surfaces
 
 ## Artifact Impact
 - [ ] System purpose (`docs/00-system-purpose.md`)
@@ -24,13 +29,13 @@
 - [ ] Reference example (`examples/reference-product/`)
 - [ ] No artifact changes
 
-## Validation
-- [ ] `python scripts/validate_template.py --mode template --root .`
-- [ ] `python scripts/validate_template.py --mode instance --root examples/reference-product`
-- [ ] Additional checks:
+## Review Evidence
+- Review steps used:
+- Additional checks:
 
 ## Guardrails
-- [ ] This PR contains no product or application code.
+- [ ] This PR respects the current gate model.
+- [ ] If product/application code changed after Gate 2, related structural artifacts were updated.
 - [ ] Structural changes update traceability and ADRs where required.
 - [ ] Any diagrams are Mermaid-only and embedded in Markdown.
 - [ ] Any new artifact IDs are unique and follow the conventions.

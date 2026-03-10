@@ -2,7 +2,7 @@
 artifact_type: pattern
 artifact_id: PAT-006
 status: active
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - OPS-001
   - NFR-001

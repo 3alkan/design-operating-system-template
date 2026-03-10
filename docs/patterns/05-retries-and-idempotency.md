@@ -2,7 +2,7 @@
 artifact_type: pattern
 artifact_id: PAT-005
 status: active
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CNT-001
   - CNT-003

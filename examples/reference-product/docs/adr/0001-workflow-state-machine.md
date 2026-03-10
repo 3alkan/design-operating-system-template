@@ -2,7 +2,7 @@
 artifact_type: adr
 artifact_id: ADR-0001
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - CMP-102
   - SCN-101

@@ -2,7 +2,7 @@
 
 Tech-stack-independent design-system template for defining a product end to end in a form that is abstractly implementation-ready.
 
-Current template version: `0.2.0`
+Current DOS version: `0.2.0`
 
 ## What This Template Is
 - A design operating system, not a loose docs repository.
@@ -17,12 +17,13 @@ Current template version: `0.2.0`
 
 ## What The Template Contains
 - A numbered artifact spine in `docs/00` to `docs/09`.
-- Authoring and validation rules in `docs/10-authoring-conventions.md`.
+- Authoring and review rules in `docs/10-authoring-conventions.md`.
 - Architecture decision records in `docs/adr/`.
-- Reusable design patterns in `docs/patterns/`.
-- A completed reference example in `examples/reference-product/`.
+- Reusable design patterns in `docs/patterns/` as DOS reference material for humans and LLMs.
+- A completed reference example in `examples/reference-product/` as DOS teaching material for humans and LLMs.
 - GitHub issue and PR templates for design-driven collaboration.
-- Validation tooling for both template skeletons and completed instances.
+
+Patterns and the bundled reference example exist to explain the DOS itself. They do not define downstream product scope by default.
 
 ## Who It Is For
 - Product-minded engineers and technical leads who want a stack-independent design package before implementation.
@@ -31,12 +32,12 @@ Current template version: `0.2.0`
 
 ## How To Use It
 1. Click **Use this template** on GitHub.
-2. Replace repository placeholders such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, and `[MAINTAINER_EMAIL]`.
+2. Replace repository placeholders such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, and `PROJECT_NAME_DESIGN_VERSION`.
 3. Read `docs/00-system-purpose.md` through `docs/10-authoring-conventions.md` in order.
 4. Define or update ADRs in `docs/adr/` for fixed structural decisions.
-5. Use `examples/reference-product/` as the quality bar for a completed instance.
-6. Run the validator in template mode while the repo is still a skeleton.
-7. Run the validator in instance mode once a project-specific design is complete.
+5. Use `docs/patterns/` and `examples/reference-product/` as DOS reference material for the level of clarity and traceability expected.
+6. Treat those bundled materials as teaching aids, not as downstream product scope by default.
+7. Review artifacts manually for consistency before claiming a downstream project instance is ready for implementation.
 
 ## Artifact Spine
 1. `docs/00-system-purpose.md`
@@ -51,11 +52,16 @@ Current template version: `0.2.0`
 10. `docs/09-traceability.md`
 11. `docs/10-authoring-conventions.md`
 
-## Validation
-- `python scripts/validate_template.py --mode template --root .`
-- `python scripts/validate_template.py --mode instance --root examples/reference-product`
+## Version Semantics
+- `VERSION` contains `DOS_VERSION`, which is the release version of this DOS/template repo.
+- `VERSION` also contains `PROJECT_NAME_DESIGN_VERSION`, which is a generic placeholder pattern for downstream project instances.
+- Downstream project repos should replace `PROJECT_NAME_DESIGN_VERSION` with their own design version value.
 
-The validator checks required files, headings, front matter, artifact IDs, traceability links, ADR minimums, and placeholder policy.
+## Review Model
+- Use manual artifact-consistency review instead of automated enforcement tooling.
+- Review the root template when changing DOS structure, rules, or contributor workflow.
+- Review the reference example when changing teaching material or the expected quality bar.
+- Review both surfaces when a DOS change affects how humans or LLMs should understand the template.
 
 ## Mermaid-Only Diagrams
 - Diagrams must be embedded in Markdown fenced blocks using ` ```mermaid `.

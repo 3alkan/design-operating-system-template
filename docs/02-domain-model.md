@@ -2,7 +2,7 @@
 artifact_type: domain-model
 artifact_id: DOM-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - INV-001
   - SCN-001

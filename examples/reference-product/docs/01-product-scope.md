@@ -2,7 +2,7 @@
 artifact_type: product-scope
 artifact_id: GOAL-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - ACT-101
   - CON-101

@@ -25,4 +25,4 @@ assignees: []
 - [ ] Follow-up ADR need is stated.
 
 ## Guardrail
-- [ ] Spike output is design artifacts, not product/application code.
+- [ ] Spike output respects the current gate model and does not introduce product/application code before Gate 2.

@@ -1,6 +1,6 @@
 ---
 name: Bug
-about: Report a defect in the template, example, validation, or collaboration workflow
+about: Report a defect in the template, reference example, review guidance, or collaboration workflow
 title: "bug: [TBD]"
 labels: ["bug"]
 assignees: []
@@ -20,7 +20,7 @@ assignees: []
 ## Affected Surface
 - Files or directories: [TBD]
 - Artifact IDs or checks: [TBD]
-- Validation mode impacted: [template/instance/both]
+- Surface impacted: [root template/reference example/both surfaces]
 
 ## Impact
 - Severity: [TBD]
@@ -28,5 +28,5 @@ assignees: []
 - Traceability or ADR impact: [TBD]
 
 ## Evidence
-- Validator output or command used: [TBD]
+- Review steps or evidence used: [TBD]
 - Additional context: [TBD]

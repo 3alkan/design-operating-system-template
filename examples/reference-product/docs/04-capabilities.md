@@ -2,7 +2,7 @@
 artifact_type: capabilities
 artifact_id: CAP-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - SCN-101
   - CNT-101

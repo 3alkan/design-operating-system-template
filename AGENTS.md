@@ -22,17 +22,17 @@ If artifacts and implementation conflict, artifacts win until updated.
 ## Design Readiness Gates
 - Gate 1 (Ready To Shape The Design)
   - The artifact spine exists with required headings and front matter.
-  - Template validation passes in `template` mode.
+  - A manual artifact-consistency review confirms the DOS template surfaces align.
 - Gate 2 (Ready For Implementation)
   - Core artifacts `01` through `09` are project-specific and internally consistent.
   - At least two ADRs are accepted in `docs/adr/`.
   - Contracts, runtime scenarios, quality expectations, and operational model are specified abstractly.
   - Traceability links goals, scenarios, capabilities, contracts, components, and checks.
-  - Validation passes in `instance` mode with no critical placeholders.
+  - Manual review confirms no critical placeholders remain in the downstream project instance.
 - Gate 3 (Ready To Merge Structural Changes)
   - Definition of Done in `docs/07-quality.md` is satisfied.
   - PR template is fully completed.
-  - Validation and CI checks pass.
+  - Review evidence and any configured CI checks pass.
 
 No product/application code is allowed before Gate 2.
 
@@ -46,12 +46,12 @@ Use this sequence for every substantial change:
 1. Spec: align with the artifact spine, ADRs, and patterns.
 2. Plan: define scoped steps, risks, and affected artifact IDs.
 3. Patch: apply minimal, traceable changes.
-4. Verify: run validation, confirm traceability, and document artifact impact.
+4. Verify: run manual artifact-consistency review, confirm traceability, and document artifact impact.
 
 ## PR Plan Requirement
 Every PR must contain a short `Plan` section with:
 - affected files or artifact IDs,
-- validation or test approach,
+- review or test approach,
 - documentation impact (`Scope`, `Domain`, `Scenario`, `Capability`, `Contract`, `Architecture`, `Quality`, `Operations`, `Traceability`, `ADR`).
 
 ## Diagram Policy (Mermaid-Only)

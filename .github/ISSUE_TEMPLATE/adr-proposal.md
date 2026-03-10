@@ -31,4 +31,4 @@ assignees: []
 ## Traceability Updates
 - Architecture or contracts impacted: [TBD]
 - Quality or operations impacted: [TBD]
-- Example update required: [Yes/No] ([TBD])
+- Surface focus: [root template/reference example/both surfaces]

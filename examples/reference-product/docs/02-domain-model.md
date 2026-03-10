@@ -2,7 +2,7 @@
 artifact_type: domain-model
 artifact_id: DOM-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - INV-101
   - SCN-101

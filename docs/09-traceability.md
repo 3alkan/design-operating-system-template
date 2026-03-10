@@ -2,7 +2,7 @@
 artifact_type: traceability
 artifact_id: CHK-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - GOAL-001
   - SCN-001

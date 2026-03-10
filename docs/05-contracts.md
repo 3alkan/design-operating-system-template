@@ -2,7 +2,7 @@
 artifact_type: contracts
 artifact_id: CNT-001
 status: template
-owner: "[MAINTAINER_EMAIL]"
+owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CAP-001
   - CMP-001

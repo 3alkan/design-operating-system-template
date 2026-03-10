@@ -2,7 +2,7 @@
 artifact_type: scenarios
 artifact_id: SCN-101
 status: accepted
-owner: "template-maintainer@example.com"
+owner: "reference-contact@example.invalid"
 related_ids:
   - ACT-101
   - CAP-101
