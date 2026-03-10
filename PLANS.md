@@ -19,5 +19,4 @@ An ExecPlan must be understandable by a newcomer with only:
 - Steps are concrete and ordered.
 - Verification is observable and repeatable.
 - Rollback is practical, not theoretical.
-- Doc updates list exact files to change.
-
+- Artifact updates list exact files or artifact IDs to change.

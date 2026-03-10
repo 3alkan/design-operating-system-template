@@ -1,6 +1,6 @@
 ---
 name: ADR proposal
-about: Propose a new architecture decision record
+about: Propose a structural design decision for the template or reference example
 title: "adr: [TBD]"
 labels: ["adr"]
 assignees: []
@@ -9,26 +9,26 @@ assignees: []
 ## Decision Topic
 [TBD]
 
-## Context
-[TBD]
+## Drivers
+- [TBD]
+- [TBD]
+
+## Affected Artifacts Or IDs
+- Artifacts: [TBD]
+- IDs: [TBD]
 
 ## Decision Candidate
 [TBD]
 
-## Alternatives Considered (at least 2)
+## Alternatives Considered
 1. [TBD]
 2. [TBD]
 
-## Rejected Option Candidates
-- [TBD] - [reason]
-
-## Consequences (Expected)
+## Expected Consequences
 - Positive: [TBD]
 - Negative: [TBD]
 
-## Open Questions
-- [OPEN QUESTION]
-
-## Related Docs
-- Architecture section: [TBD]
-- Proposed ADR file: `docs/adr/[NNNN-short-title].md`
+## Traceability Updates
+- Architecture or contracts impacted: [TBD]
+- Quality or operations impacted: [TBD]
+- Example update required: [Yes/No] ([TBD])

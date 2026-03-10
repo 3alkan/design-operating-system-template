@@ -1,28 +1,28 @@
 ---
 name: Spike / research
-about: Time-boxed investigation with docs output and decision recommendation
+about: Time-boxed design investigation with explicit artifact output
 title: "spike: [TBD]"
 labels: ["spike", "research"]
 assignees: []
 ---
 
-## Question to Investigate
+## Question To Investigate
 [TBD]
 
-## Scope and Timebox
+## Scope And Timebox
 - Scope: [TBD]
 - Timebox: [TBD]
 
-## Success Criteria
-- [ ] Clear recommendation produced.
-- [ ] Tradeoffs documented.
-- [ ] Open questions documented.
-- [ ] Docs updated.
-
 ## Required Outputs
-- Updated docs: [TBD file paths]
-- Decision recommendation: [TBD]
-- Follow-up ADR needed: [Yes/No] ([TBD])
+- Artifact files to update: [TBD]
+- Artifact IDs to clarify: [TBD]
+- Decision recommendation needed: [TBD]
+
+## Success Criteria
+- [ ] Recommendation is clear.
+- [ ] Tradeoffs are documented.
+- [ ] Traceability impact is identified.
+- [ ] Follow-up ADR need is stated.
 
 ## Guardrail
-- [ ] Spike output is docs + recommendation, not product/app code.
+- [ ] Spike output is design artifacts, not product/application code.

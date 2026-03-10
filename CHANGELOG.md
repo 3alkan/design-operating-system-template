@@ -6,10 +6,13 @@ The format follows Keep a Changelog and this project aims to use Semantic Versio
 
 ## [Unreleased]
 ### Added
-- [TBD]
+- Artifact-based design spine (`docs/00` to `docs/10`) with authoring conventions and pattern library.
+- Completed reference example product in `examples/reference-product/`.
+- Validation-ready collaboration surfaces for issues, PRs, and maintainer setup.
 
 ### Changed
-- [TBD]
+- Repository positioning from docs-first architecture template to design-system template.
+- ADR and diagram guidance to align with traceable design artifacts.
 
 ### Fixed
 - [TBD]

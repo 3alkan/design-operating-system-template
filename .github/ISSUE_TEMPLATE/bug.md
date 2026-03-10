@@ -1,6 +1,6 @@
 ---
 name: Bug
-about: Report a defect in docs, templates, or repository workflow
+about: Report a defect in the template, example, validation, or collaboration workflow
 title: "bug: [TBD]"
 labels: ["bug"]
 assignees: []
@@ -17,15 +17,16 @@ assignees: []
 2. [TBD]
 3. [TBD]
 
+## Affected Surface
+- Files or directories: [TBD]
+- Artifact IDs or checks: [TBD]
+- Validation mode impacted: [template/instance/both]
+
 ## Impact
 - Severity: [TBD]
-- Affected files/templates: [TBD]
+- User impact: [TBD]
+- Traceability or ADR impact: [TBD]
 
-## Docs Impact
-- [ ] PRD (`docs/01-prd-lite.md`)
-- [ ] Architecture (`docs/02-architecture.md`)
-- [ ] ADR (`docs/adr/`)
-- [ ] Runbook (`docs/05-runbook.md`)
-
-## Additional Context
-[TBD]
+## Evidence
+- Validator output or command used: [TBD]
+- Additional context: [TBD]

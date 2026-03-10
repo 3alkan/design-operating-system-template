@@ -34,7 +34,7 @@ open_questions:
 ## Artifact Updates
 - Contracts: state idempotency keys or equivalent semantics.
 - Quality: define failure and replay checks.
-- Operations: define replay handling and runbook guidance.
+- Operations: define replay handling and recovery guidance.
 - ADRs: record any unusual consistency tradeoffs.
 
 ## Inputs

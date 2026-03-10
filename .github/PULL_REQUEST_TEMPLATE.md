@@ -1,25 +1,40 @@
-## Summary (What/Why)
-- What: [TBD]
-- Why: [TBD]
+## Summary
+- What changed:
+- Why:
 
 ## Plan
-- Files touched:
-  - [TBD]
-- Verification approach:
-  - [TBD]
-- Doc impact:
-  - [ ] PRD (`docs/01-prd-lite.md`)
-  - [ ] Architecture (`docs/02-architecture.md`)
-  - [ ] ADR (`docs/adr/`)
-  - [ ] Runbook (`docs/05-runbook.md`)
-  - [ ] No doc updates required (reason: [TBD])
+- Files or artifact IDs touched:
+- Validation approach:
+- Design-system impact:
 
-## Design-Phase Guardrails
-- [ ] This PR contains no product/application code during design phases.
-- [ ] If structural behavior changed, architecture docs and/or ADRs are updated.
-- [ ] Any diagram is Mermaid-only in Markdown (` ```mermaid `).
+## Artifact Impact
+- [ ] System purpose (`docs/00-system-purpose.md`)
+- [ ] Product scope (`docs/01-product-scope.md`)
+- [ ] Domain model (`docs/02-domain-model.md`)
+- [ ] Scenarios (`docs/03-scenarios.md`)
+- [ ] Capabilities (`docs/04-capabilities.md`)
+- [ ] Contracts (`docs/05-contracts.md`)
+- [ ] Architecture (`docs/06-architecture.md`)
+- [ ] Quality (`docs/07-quality.md`)
+- [ ] Operations (`docs/08-operations.md`)
+- [ ] Traceability (`docs/09-traceability.md`)
+- [ ] Authoring conventions (`docs/10-authoring-conventions.md`)
+- [ ] ADR (`docs/adr/`)
+- [ ] Patterns (`docs/patterns/`)
+- [ ] Reference example (`examples/reference-product/`)
+- [ ] No artifact changes
+
+## Validation
+- [ ] `python scripts/validate_template.py --mode template --root .`
+- [ ] `python scripts/validate_template.py --mode instance --root examples/reference-product`
+- [ ] Additional checks:
+
+## Guardrails
+- [ ] This PR contains no product or application code.
+- [ ] Structural changes update traceability and ADRs where required.
+- [ ] Any diagrams are Mermaid-only and embedded in Markdown.
+- [ ] Any new artifact IDs are unique and follow the conventions.
 
 ## Checklist
-- [ ] Acceptance criteria are clear.
-- [ ] Risks/assumptions/open questions are documented.
-- [ ] Issue/ADR links are included where relevant.
+- [ ] Risks, assumptions, and open questions are documented.
+- [ ] Reviewers can identify the affected artifact path from this PR alone.

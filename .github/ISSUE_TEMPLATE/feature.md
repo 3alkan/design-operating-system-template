@@ -1,6 +1,6 @@
 ---
 name: Feature
-about: Propose a docs-first feature with explicit acceptance criteria
+about: Propose a design-system change or new template capability
 title: "feat: [TBD]"
 labels: ["feature"]
 assignees: []
@@ -9,26 +9,28 @@ assignees: []
 ## Problem
 [TBD]
 
-## Proposed Outcome
+## Desired Outcome
 [TBD]
 
-## Acceptance Criteria (Required)
+## Affected Artifacts Or IDs
+- Artifact files: [TBD]
+- Artifact IDs: [TBD]
+
+## Acceptance Criteria
 - [ ] [TBD]
 - [ ] [TBD]
 
-## Scope
-- In scope: [TBD]
-- Out of scope: [TBD]
+## Constraints And Non-Goals
+- Constraints: [TBD]
+- Non-goals: [TBD]
 
-## Constraints / Assumptions
-- [ASSUMPTION]
-- [OPEN QUESTION]
+## Traceability Impact
+- Goals or actors affected: [TBD]
+- Scenarios or capabilities affected: [TBD]
+- Contracts, components, or checks affected: [TBD]
+- ADR needed: [Yes/No] ([TBD])
 
-## Docs Impact
-- [ ] PRD (`docs/01-prd-lite.md`)
-- [ ] Architecture (`docs/02-architecture.md`)
-- [ ] ADR (`docs/adr/`)
-- [ ] Runbook (`docs/05-runbook.md`)
-
-## Design-Phase Rule
-- [ ] No product/application code requested before Gate 2.
+## Validation Expectation
+- Template mode only
+- Instance mode only
+- Both modes
