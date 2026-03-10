@@ -2,6 +2,8 @@
 
 Tech-stack-independent design-system template for defining a product end to end in a form that is abstractly implementation-ready.
 
+Current template version: `0.2.0`
+
 ## What This Template Is
 - A design operating system, not a loose docs repository.
 - A shared medium for architects, developers, and LLMs to define product intent, domain, behavior, contracts, architecture, quality, and operations.

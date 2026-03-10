@@ -10,6 +10,8 @@
 - Remove or migrate LFS-tracked files before enabling template use.
 
 ## Pre-Publish Checklist
+- [ ] `VERSION` is bumped for the release.
+- [ ] `CHANGELOG.md` has a dated release section for that version.
 - [ ] `README.md` reflects the design-system promise and validation commands.
 - [ ] `AGENTS.md` and `docs/10-authoring-conventions.md` are aligned.
 - [ ] The artifact spine and pattern library are internally consistent.
@@ -25,4 +27,5 @@
 
 ## Release Discipline
 - Update `CHANGELOG.md` when the template structure, validation rules, or collaboration workflow change materially.
+- Create an annotated Git tag in the format `vX.Y.Z` after the release commit is finalized.
 - Publish only after both validator modes succeed from a clean checkout.
