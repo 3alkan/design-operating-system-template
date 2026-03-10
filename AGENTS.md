@@ -1,51 +1,58 @@
 # AGENTS.md
 
-This repository is docs-first. Documentation is the source of truth between architect, Codex, and developers.
+This repository is a design-system template. Design artifacts are the source of truth between architect, Codex, developers, and downstream LLMs.
 
-## Source of Truth (Doc Spine)
-- `docs/00-idea.md`: idea, users, problem, constraints.
-- `docs/01-prd-lite.md`: goals, MVP scope, acceptance criteria.
-- `docs/02-architecture.md`: architecture intent, boundaries, contracts, runtime views.
-- `docs/03-plan.md`: milestones, sequencing, risk log, spikes.
-- `docs/04-quality.md`: DoD, test strategy, CI expectations, review checklist.
-- `docs/05-runbook.md`: release, rollback, operations, troubleshooting.
-- `docs/adr/`: architecture decision records (ADRs).
-- `docs/diagrams/README.md`: diagram policy.
+## Source of Truth (Artifact Spine)
+- `docs/00-system-purpose.md`: template mission, usage modes, completion standard.
+- `docs/01-product-scope.md`: actors, problems, goals, constraints, non-goals.
+- `docs/02-domain-model.md`: domain concepts, invariants, lifecycle rules, glossary.
+- `docs/03-scenarios.md`: user and system scenarios with outcomes and failure paths.
+- `docs/04-capabilities.md`: capability catalog with acceptance criteria.
+- `docs/05-contracts.md`: abstract commands, queries, events, payload semantics, error rules.
+- `docs/06-architecture.md`: components, boundaries, runtime views, deployment shape, cross-cutting concepts.
+- `docs/07-quality.md`: definition of done, verification strategy, review checklist.
+- `docs/08-operations.md`: release, rollback, observability, troubleshooting, operating model.
+- `docs/09-traceability.md`: mappings across goals, scenarios, capabilities, contracts, components, ADRs, and checks.
+- `docs/10-authoring-conventions.md`: required schema, statuses, IDs, placeholder policy, and update rules.
+- `docs/adr/`: architecture decision records.
+- `docs/patterns/`: reusable design patterns.
 
-If docs and code conflict, docs win until updated.
+If artifacts and implementation conflict, artifacts win until updated.
 
-## Phase Gates
-- Gate 1 (Ready for Architecture):
-  - `docs/01-prd-lite.md` has MVP acceptance criteria with explicit done conditions.
-- Gate 2 (Ready for Implementation):
-  - `docs/02-architecture.md` includes required views and 3 runtime scenarios.
-  - At least 2 ADRs exist in `docs/adr/` (can include `[TBD]` where needed).
-  - Interfaces/contracts are specified abstractly (implementation-agnostic).
-- Gate 3 (Ready to Merge Features):
-  - DoD in `docs/04-quality.md` is satisfied.
+## Design Readiness Gates
+- Gate 1 (Ready To Shape The Design)
+  - The artifact spine exists with required headings and front matter.
+  - Template validation passes in `template` mode.
+- Gate 2 (Ready For Implementation)
+  - Core artifacts `01` through `09` are project-specific and internally consistent.
+  - At least two ADRs are accepted in `docs/adr/`.
+  - Contracts, runtime scenarios, quality expectations, and operational model are specified abstractly.
+  - Traceability links goals, scenarios, capabilities, contracts, components, and checks.
+  - Validation passes in `instance` mode with no critical placeholders.
+- Gate 3 (Ready To Merge Structural Changes)
+  - Definition of Done in `docs/07-quality.md` is satisfied.
   - PR template is fully completed.
-  - CI checks (when configured) pass.
+  - Validation and CI checks pass.
 
 No product/application code is allowed before Gate 2.
 
-## Docs Are the Contract
-- Any structural change (modules, boundaries, interfaces, runtime behavior, deployment shape, cross-cutting policy) must update:
-  - `docs/02-architecture.md`, and/or
-  - relevant ADRs in `docs/adr/`.
-- PRs that change structure without doc updates are not review-ready.
+## Artifacts Are The Contract
+- Any change to product scope, behavior, domain, interfaces, components, runtime behavior, deployment shape, or cross-cutting policy must update the relevant artifacts and `docs/09-traceability.md`.
+- Fixed structural decisions must be recorded in `docs/adr/`.
+- PRs that change the design without matching artifact updates are not review-ready.
 
 ## Codex Workflow In This Repo
 Use this sequence for every substantial change:
-1. Spec: align with PRD, architecture, runbook, and ADR context.
-2. Plan: define scoped steps and risks.
+1. Spec: align with the artifact spine, ADRs, and patterns.
+2. Plan: define scoped steps, risks, and affected artifact IDs.
 3. Patch: apply minimal, traceable changes.
-4. Verify: confirm acceptance criteria, checks, and doc impact.
+4. Verify: run validation, confirm traceability, and document artifact impact.
 
 ## PR Plan Requirement
 Every PR must contain a short `Plan` section with:
-- files touched,
-- test approach,
-- documentation impact (`PRD`, `Architecture`, `ADR`, `Runbook`).
+- affected files or artifact IDs,
+- validation or test approach,
+- documentation impact (`Scope`, `Domain`, `Scenario`, `Capability`, `Contract`, `Architecture`, `Quality`, `Operations`, `Traceability`, `ADR`).
 
 ## Diagram Policy (Mermaid-Only)
 - Diagrams must be embedded in Markdown fenced blocks using ` ```mermaid `.
@@ -53,4 +60,3 @@ Every PR must contain a short `Plan` section with:
 - Split large diagrams by concern.
 - Prefer simple styles and labels over visual effects.
 - Allowed diagram types: `flowchart`, `sequenceDiagram`, `stateDiagram-v2`.
-

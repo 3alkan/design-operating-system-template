@@ -1,0 +1,128 @@
+---
+artifact_type: template-spec
+artifact_id: SPEC-001
+status: active
+owner: "[MAINTAINER_EMAIL]"
+related_ids:
+  - SYS-001
+assumptions:
+  - "[ASSUMPTION] Downstream projects may choose any implementation stack."
+open_questions:
+  - "[OPEN QUESTION] Whether downstream teams add extra artifact types beyond the core set."
+---
+
+# 10 - Authoring Conventions
+
+## Purpose
+- Define the required structure that makes the template readable by humans and safe for LLM-assisted updates.
+- Standardize IDs, statuses, placeholders, and cross-artifact references.
+
+## Required Front Matter
+Every artifact document in the spine, patterns, ADRs, and reference example must declare:
+- `artifact_type`
+- `artifact_id`
+- `status`
+- `owner`
+- `related_ids`
+- `assumptions`
+- `open_questions`
+
+## Required Section Names
+Core spine documents must preserve their titled sections exactly. Each document should include:
+- `Purpose`
+- `Inputs`
+- `Outputs`
+- `Assumptions`
+- `Open Questions`
+- `Related IDs`
+
+Artifact-specific sections may add more detail, but the required sections must remain present.
+
+## Artifact ID Scheme
+- `SYS-###`: system purpose or template-level statements
+- `ACT-###`: actor definitions
+- `GOAL-###`: goals and success criteria
+- `CON-###`: constraints
+- `DOM-###`: domain concepts
+- `INV-###`: invariants
+- `SCN-###`: scenarios
+- `CAP-###`: capabilities
+- `CNT-###`: contracts
+- `CMP-###`: components
+- `NFR-###`: non-functional requirements
+- `OPS-###`: operational procedures or controls
+- `RISK-###`: risks
+- `ADR-####`: architecture decision records
+- `PAT-###`: reusable patterns
+- `CHK-###`: validation or review checks
+
+IDs must be unique within a completed project instance.
+
+## Status Values
+Allowed statuses:
+- `template`
+- `draft`
+- `candidate`
+- `accepted`
+- `active`
+- `deprecated`
+- `superseded`
+
+Use:
+- `template` for reusable skeletons.
+- `draft` or `candidate` for work in progress.
+- `accepted` for locked design decisions and completed artifacts.
+- `active` for stable template rules or operationally active items.
+
+## Placeholder Policy
+Allowed placeholder tokens:
+- `[PROJECT_NAME]`
+- `[PROJECT_DESCRIPTION]`
+- `[MAINTAINER_EMAIL]`
+- `[TBD]`
+- `[ASSUMPTION]`
+- `[OPEN QUESTION]`
+
+Rules:
+- Template mode allows all listed placeholders.
+- Instance mode forbids unresolved placeholders in core artifacts, ADRs, and traceability data.
+- Placeholder text must never replace an artifact ID.
+
+## Traceability Rules
+- Every `GOAL` must link to at least one `SCN` and one `CAP`.
+- Every `SCN` must link to at least one `CAP`.
+- Every `CAP` must link to at least one `CNT`, one `CMP`, and one `CHK`.
+- Every `CNT` must link to at least one `CMP`.
+- Every `CMP` used in architecture must appear in `docs/09-traceability.md`.
+- Accepted ADRs must link to impacted components, contracts, or cross-cutting rules.
+
+## Authoring Rules For Humans And LLMs
+- Keep headings stable; extend with new sections only when the conventions are updated.
+- Prefer tables for inventories and mappings.
+- Keep scenarios concrete, including preconditions, main flow, alternate flow, and failure behavior.
+- Keep contracts abstract: define intent, inputs, outputs, errors, and guarantees without binding to a transport or stack unless an ADR fixes it.
+- Record open design gaps explicitly rather than hiding them in prose.
+
+## Validation Contract
+- Root template content must pass `python scripts/validate_template.py --mode template --root .`.
+- Completed instances must pass `python scripts/validate_template.py --mode instance --root <path>`.
+- Validation covers file presence, headings, front matter keys, ID uniqueness, status validity, cross-reference integrity, ADR minimums, traceability coverage, and placeholder policy.
+
+## Inputs
+- Template artifact definitions.
+- Repo contribution workflow.
+- Validator expectations.
+
+## Outputs
+- Stable authoring rules for all documents in this repository.
+- A machine-checkable contract for template and instance validation.
+
+## Assumptions
+- Downstream implementers may choose different stacks while honoring the same abstract design.
+
+## Open Questions
+- Whether future versions should split traceability into multiple files for very large systems.
+
+## Related IDs
+- `SYS-001`
+- `CHK-001`
