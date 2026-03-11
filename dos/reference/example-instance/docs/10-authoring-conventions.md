@@ -6,7 +6,7 @@ owner: "reference-contact@example.invalid"
 related_ids:
   - SYS-101
 assumptions:
-  - "This example adopts the same authoring contract as the root template."
+  - "This example adopts the same authoring contract as the canonical DOS package."
 open_questions:
   - "None."
 ---
@@ -46,7 +46,7 @@ open_questions:
 - Review should confirm that the example still demonstrates coherent goals, scenarios, capabilities, contracts, architecture, and traceability.
 
 ## Inputs
-- The root template conventions and the completed example artifacts.
+- The canonical DOS package conventions and the completed example artifacts.
 
 ## Outputs
 - A locally complete conventions note for the reference product.

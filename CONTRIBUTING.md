@@ -1,22 +1,22 @@
 # Contributing
 
-Thanks for improving this template.
+Thanks for improving the DOS.
 
 ## How To Propose Changes
 1. Open an issue using the templates in `.github/ISSUE_TEMPLATE/`.
-2. Describe the affected artifact IDs, the design problem, and the intended impact on traceability.
+2. Describe the affected DOS paths or artifact IDs, the design problem, and the intended impact on downstream instances.
 3. Submit a PR using `.github/PULL_REQUEST_TEMPLATE.md`.
 
 ## Contribution Rules
-- This repository is template-focused and DOS-owned.
+- This repository owns the canonical DOS package.
 - No product/application code is allowed before Gate 2.
 - Product/application code is allowed after Gate 2.
 - Contributions must preserve stack independence.
-- Artifacts remain the source of truth, and structural code changes must update the relevant artifacts and traceability rules together.
-- Placeholder tokens such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, `PROJECT_NAME_DESIGN_VERSION`, `[TBD]`, `[ASSUMPTION]`, and `[OPEN QUESTION]` may remain only where the authoring conventions allow them.
+- The frozen package under `dos/` remains the source of truth, and structural changes must update the relevant package assets together.
+- Placeholder tokens such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, `INSTANCE_DESIGN_VERSION`, `[TBD]`, `[ASSUMPTION]`, and `[OPEN QUESTION]` may remain only where the instance-template authoring conventions allow them.
 
 ## Authoring Rules
-- Follow `docs/10-authoring-conventions.md`.
+- Follow `dos/instance-template/docs/10-authoring-conventions.md` when changing the downstream instance contract.
 - Use fixed section headings and front matter keys.
 - Assign stable artifact IDs and maintain `related_ids`.
 - Use Mermaid-only diagrams in fenced ` ```mermaid ` blocks.
@@ -24,11 +24,11 @@ Thanks for improving this template.
 
 ## Review Checklist
 - [ ] Change respects the current gate model.
-- [ ] Affected artifact IDs are declared in the issue or PR.
-- [ ] Related artifacts and `docs/09-traceability.md` are updated.
-- [ ] If product/application code changed after Gate 2, related structural artifacts were updated.
-- [ ] Fixed structural decisions are captured in ADRs where needed.
-- [ ] Placeholder policy remains valid for the DOS repo or the downstream project instance being reviewed.
+- [ ] Affected DOS paths or artifact IDs are declared in the issue or PR.
+- [ ] Related package artifacts are updated together.
+- [ ] If the downstream instance contract changed, matching traceability or ADR templates were updated in `dos/instance-template/`.
+- [ ] Fixed structural decisions are captured where needed.
+- [ ] Placeholder policy remains valid for the DOS package being released.
 - [ ] Review steps or other evidence are included in the PR.
 
 ## Templates

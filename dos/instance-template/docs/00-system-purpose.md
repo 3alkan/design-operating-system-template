@@ -24,10 +24,10 @@ open_questions:
 - Completion standard: a completed instance lets a capable developer or LLM implement the product end to end in a chosen stack with minimal guessing.
 
 ## Usage Modes
-| Mode | Description | Validation Mode |
+| State | Description | Expected Status |
 |---|---|---|
-| Template | Reusable skeleton with allowed placeholders and open decisions | `template` |
-| Instance | Project-specific completed design package with resolved critical decisions | `instance` |
+| Skeleton | Freshly materialized instance with unresolved project placeholders | `template` or `draft` |
+| Active instance | Project-specific design package moving toward Gate 2 | `candidate` or `accepted` |
 
 ## Design Principles
 - Stay stack-independent unless an ADR intentionally fixes a technology choice.

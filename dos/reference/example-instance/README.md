@@ -1,8 +1,8 @@
 # Reference Product Example
 
-This example shows a completed instance of the template for a work intake and approval platform.
+This example shows a completed downstream instance of the DOS for a work intake and approval platform.
 
-It is DOS reference and teaching material for humans and LLMs. It demonstrates how the DOS can be filled out, but it does not define downstream product scope by default.
+It is frozen DOS reference and teaching material for humans and LLMs. It demonstrates how the DOS can be filled out, but it does not define downstream product scope by default and is never copied into instance roots by default.
 
 ## Product Summary
 - Product: Flow Approval Hub

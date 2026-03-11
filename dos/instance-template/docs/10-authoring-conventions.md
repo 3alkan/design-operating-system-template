@@ -18,7 +18,7 @@ open_questions:
 - Standardize IDs, statuses, placeholders, and cross-artifact references.
 
 ## Required Front Matter
-Every artifact document in the spine, patterns, ADRs, and reference example must declare:
+Every artifact document in the instance spine and ADR set must declare:
 - `artifact_type`
 - `artifact_id`
 - `status`
@@ -80,14 +80,14 @@ Allowed placeholder tokens:
 - `[PROJECT_NAME]`
 - `[PROJECT_DESCRIPTION]`
 - `[PROJECT_CONTACT_EMAIL]`
-- `PROJECT_NAME_DESIGN_VERSION`
+- `INSTANCE_DESIGN_VERSION`
 - `[TBD]`
 - `[ASSUMPTION]`
 - `[OPEN QUESTION]`
 
 Rules:
-- The DOS repo may keep template placeholders where the template is intentionally generic.
-- Downstream project instances should resolve project placeholders and critical design placeholders before Gate 2.
+- A freshly materialized instance may keep placeholders while the design is still incomplete.
+- Active project instances should resolve project placeholders and critical design placeholders before Gate 2.
 - Placeholder text must never replace an artifact ID.
 
 ## Traceability Rules
@@ -106,18 +106,17 @@ Rules:
 - Record open design gaps explicitly rather than hiding them in prose.
 
 ## Review Contract
-- Review the root DOS surfaces whenever template structure, patterns, examples, or contributor workflow change.
-- Review downstream project instances for artifact consistency before claiming Gate 2 readiness.
+- Review this instance for artifact consistency before claiming Gate 2 readiness.
 - Review covers file presence, headings, front matter keys, ID consistency, cross-reference integrity, ADR minimums, traceability coverage, and placeholder policy.
 
 ## Inputs
-- Template artifact definitions.
+- Instance artifact definitions.
 - Repo contribution workflow.
 - Manual review expectations.
 
 ## Outputs
 - Stable authoring rules for all documents in this repository.
-- A consistent review contract for the DOS repo and downstream project instances.
+- A consistent review contract for this instance.
 
 ## Assumptions
 - Downstream implementers may choose different stacks while honoring the same abstract design.

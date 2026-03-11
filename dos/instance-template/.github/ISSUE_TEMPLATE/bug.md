@@ -1,6 +1,6 @@
 ---
 name: Bug
-about: Report a defect in the template, reference example, review guidance, or collaboration workflow
+about: Report a defect in the instance design, lineage, or collaboration workflow
 title: "bug: [TBD]"
 labels: ["bug"]
 assignees: []
@@ -17,15 +17,9 @@ assignees: []
 2. [TBD]
 3. [TBD]
 
-## Affected Surface
+## Affected Artifacts
 - Files or directories: [TBD]
 - Artifact IDs or checks: [TBD]
-- Surface impacted: [repo shell/dos package/dos reference/both surfaces]
-
-## Impact
-- Severity: [TBD]
-- User impact: [TBD]
-- Traceability or ADR impact: [TBD]
 
 ## Evidence
 - Review steps or evidence used: [TBD]

@@ -1,67 +1,51 @@
-# [PROJECT_NAME]
+# Design Operating System Template
 
-Tech-stack-independent design-system template for defining a product end to end in a form that is abstractly implementation-ready.
+Tech-stack-independent Design Operating System (DOS) for defining products end to end in a form that is abstractly implementation-ready.
 
-Current DOS version: `0.3.0`
+Current DOS version: `0.4.0`
 
-## What This Template Is
-- A design operating system, not a loose docs repository.
-- A shared medium for architects, developers, and LLMs to define product intent, domain, behavior, contracts, architecture, quality, and operations.
-- A template whose completed instance should be sufficient for a capable developer or LLM to implement the product end to end in a chosen stack with minimal guessing.
+## What This Repository Is
+- The canonical DOS repository, not a downstream product-design repo.
+- A publishing shell for a frozen DOS package under `dos/`.
+- A shared medium for architects, developers, and LLMs to maintain the canonical package and materialize downstream design instances.
 
-## Design Contract
-- Design artifacts are the source of truth.
-- Technology choices are intentionally left open unless an ADR fixes them.
-- The template must stay implementation-independent while being concrete about behavior, boundaries, contracts, runtime scenarios, and quality expectations.
-- Structural changes require matching artifact and traceability updates before review.
+## DOS Model
+- `dos/instance-template/` is the copyable downstream design package.
+- `dos/patterns/` contains frozen DOS pattern assets for humans and LLMs.
+- `dos/reference/` contains frozen DOS teaching material, including the bundled example instance and walkthroughs.
+- `dos/dos-manifest.json` is the machine-readable package manifest for versioning, file inventory, and integrity data.
 
-## What The Template Contains
-- A numbered artifact spine in `docs/00` to `docs/09`.
-- Authoring and review rules in `docs/10-authoring-conventions.md`.
-- Architecture decision records in `docs/adr/`.
-- Reusable design patterns in `docs/patterns/` as DOS reference material for humans and LLMs.
-- A completed reference example in `examples/reference-product/` as DOS teaching material for humans and LLMs.
-- GitHub issue and PR templates for design-driven collaboration.
+The repo root belongs to the DOS itself. A downstream instance is created from `dos/instance-template/` and owns its own root from the first moment of materialization.
 
-Patterns and the bundled reference example exist to explain the DOS itself. They do not define downstream product scope by default.
+## How To Use The DOS
+1. Read `docs/INSTANCE_CREATION.md` to understand canonical DOS repo vs downstream instance.
+2. Review `dos/README.md` to understand the frozen package boundary.
+3. Inspect `dos/patterns/` and `dos/reference/` as teaching material, not as downstream product scope by default.
+4. Regenerate `dos/dos-manifest.json` with `python scripts/build_dos_manifest.py` whenever the frozen package changes.
+5. Materialize a downstream repo with `python scripts/instantiate_dos.py --target <path> --instance-name <name> --instance-version <x.y.z>`.
+6. Fill the materialized instance root and reach Gate 2 before implementation begins.
 
-## Who It Is For
-- Product-minded engineers and technical leads who want a stack-independent design package before implementation.
-- Teams that want design traceability across goals, scenarios, capabilities, contracts, architecture, and operations.
-- LLM-assisted workflows that need stable structure and explicit update rules.
+## Repository Structure
+- `dos/`
+  - Canonical frozen DOS package.
+- `docs/`
+  - DOS repo shell guides for instance creation and DOS publishing.
+- `scripts/`
+  - DOS tooling for instantiation and manifest generation.
+- `.github/`
+  - Contribution surfaces for the canonical DOS repo.
 
-## How To Use It
-1. Click **Use this template** on GitHub.
-2. Replace repository placeholders such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, and `PROJECT_NAME_DESIGN_VERSION`.
-3. Read `docs/00-system-purpose.md` through `docs/10-authoring-conventions.md` in order.
-4. Define or update ADRs in `docs/adr/` for fixed structural decisions.
-5. Use `docs/patterns/` and `examples/reference-product/` as DOS reference material for the level of clarity and traceability expected.
-6. Treat those bundled materials as teaching aids, not as downstream product scope by default.
-7. Review artifacts manually for consistency before claiming a downstream project instance is ready for implementation.
-
-## Artifact Spine
-1. `docs/00-system-purpose.md`
-2. `docs/01-product-scope.md`
-3. `docs/02-domain-model.md`
-4. `docs/03-scenarios.md`
-5. `docs/04-capabilities.md`
-6. `docs/05-contracts.md`
-7. `docs/06-architecture.md`
-8. `docs/07-quality.md`
-9. `docs/08-operations.md`
-10. `docs/09-traceability.md`
-11. `docs/10-authoring-conventions.md`
-
-## Version Semantics
-- `VERSION` contains `DOS_VERSION`, which is the release version of this DOS/template repo.
-- `VERSION` also contains `PROJECT_NAME_DESIGN_VERSION`, which is a generic placeholder pattern for downstream project instances.
-- Downstream project repos should replace `PROJECT_NAME_DESIGN_VERSION` with their own design version value.
+## Version And Integrity
+- Root `VERSION` contains only `DOS_VERSION`.
+- `dos/dos-manifest.json` repeats DOS version metadata and records the package hash and file inventory for the frozen `dos/` package.
+- `python scripts/build_dos_manifest.py` is the canonical way to refresh the manifest before release or instantiation.
+- Downstream instances own their own `VERSION` and `INSTANCE_METADATA.json`.
 
 ## Review Model
-- Use manual artifact-consistency review instead of automated enforcement tooling.
-- Review the root template when changing DOS structure, rules, or contributor workflow.
-- Review the reference example when changing teaching material or the expected quality bar.
-- Review both surfaces when a DOS change affects how humans or LLMs should understand the template.
+- Review the repo shell when changing DOS publishing, onboarding, or contributor workflow.
+- Review `dos/instance-template/` when changing the downstream instance contract.
+- Review `dos/patterns/` and `dos/reference/` when changing teaching/reference material.
+- Review `dos/dos-manifest.json` whenever the frozen DOS package changes.
 
 ## Mermaid-Only Diagrams
 - Diagrams must be embedded in Markdown fenced blocks using ` ```mermaid `.

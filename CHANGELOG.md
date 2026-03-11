@@ -6,7 +6,7 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 
 ## Downstream Project Changelog Placeholder
 - This repository is the canonical DOS/template repo, so it does not track downstream project change history.
-- Downstream project repos should replace `PROJECT_NAME_DESIGN_VERSION` in their own `VERSION` file and maintain their own changelog.
+- Downstream project repos should set `INSTANCE_DESIGN_VERSION` in their own `VERSION` file and maintain their own changelog.
 
 ## DOS Template Release History
 
@@ -19,6 +19,18 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 
 #### Fixed
 - [TBD]
+
+### [0.4.0] - 2026-03-11
+#### Added
+- Canonical frozen DOS package under `dos/`, including `dos/instance-template/`, `dos/patterns/`, `dos/reference/`, and `dos/dos-manifest.json`.
+- Instance materialization tooling in `scripts/instantiate_dos.py`.
+- DOS manifest generation tooling in `scripts/build_dos_manifest.py`.
+- Downstream instance lineage contract via `INSTANCE_METADATA.json`.
+
+#### Changed
+- Repo root now acts as a DOS publishing and governance shell rather than the downstream instance root.
+- DOS onboarding now distinguishes the canonical DOS repo, frozen DOS package, and materialized downstream instance.
+- Downstream instance versioning now lives in the materialized instance `VERSION` file rather than the DOS repo `VERSION`.
 
 ### [0.3.0] - 2026-03-10
 #### Changed

@@ -31,4 +31,4 @@ assignees: []
 ## Traceability Updates
 - Architecture or contracts impacted: [TBD]
 - Quality or operations impacted: [TBD]
-- Surface focus: [root template/reference example/both surfaces]
+- Surface focus: [repo shell/dos package/dos reference/both surfaces]

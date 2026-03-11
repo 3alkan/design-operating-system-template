@@ -8,25 +8,20 @@
 - Design-system impact:
 
 ## Surface Impact
-- [ ] Root template only
-- [ ] Reference example only
+- [ ] Repo shell only
+- [ ] DOS package only
+- [ ] DOS reference only
 - [ ] Both surfaces
 
 ## Artifact Impact
-- [ ] System purpose (`docs/00-system-purpose.md`)
-- [ ] Product scope (`docs/01-product-scope.md`)
-- [ ] Domain model (`docs/02-domain-model.md`)
-- [ ] Scenarios (`docs/03-scenarios.md`)
-- [ ] Capabilities (`docs/04-capabilities.md`)
-- [ ] Contracts (`docs/05-contracts.md`)
-- [ ] Architecture (`docs/06-architecture.md`)
-- [ ] Quality (`docs/07-quality.md`)
-- [ ] Operations (`docs/08-operations.md`)
-- [ ] Traceability (`docs/09-traceability.md`)
-- [ ] Authoring conventions (`docs/10-authoring-conventions.md`)
-- [ ] ADR (`docs/adr/`)
-- [ ] Patterns (`docs/patterns/`)
-- [ ] Reference example (`examples/reference-product/`)
+- [ ] DOS shell docs (`README.md`, `AGENTS.md`, `docs/INSTANCE_CREATION.md`, `docs/MAINTAINER_PUBLISHING.md`)
+- [ ] Instance template spine (`dos/instance-template/docs/`)
+- [ ] Instance template repo files (`dos/instance-template/`)
+- [ ] DOS ADR templates (`dos/instance-template/docs/adr/`)
+- [ ] DOS patterns (`dos/patterns/`)
+- [ ] DOS reference example (`dos/reference/example-instance/`)
+- [ ] DOS reference walkthroughs (`dos/reference/walkthroughs/`)
+- [ ] DOS manifest (`dos/dos-manifest.json`)
 - [ ] No artifact changes
 
 ## Review Evidence
@@ -35,8 +30,7 @@
 
 ## Guardrails
 - [ ] This PR respects the current gate model.
-- [ ] If product/application code changed after Gate 2, related structural artifacts were updated.
-- [ ] Structural changes update traceability and ADRs where required.
+- [ ] Structural changes update the relevant package assets and lineage semantics where required.
 - [ ] Any diagrams are Mermaid-only and embedded in Markdown.
 - [ ] Any new artifact IDs are unique and follow the conventions.
 

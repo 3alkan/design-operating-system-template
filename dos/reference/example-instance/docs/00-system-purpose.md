@@ -23,10 +23,10 @@ open_questions:
 - Completion standard: `A developer or LLM can implement the product end to end in a chosen stack without inventing the product model, core workflows, runtime boundaries, or operational expectations.`
 
 ## Usage Modes
-| Mode | Description | Validation Mode |
+| State | Description | Expected Status |
 |---|---|---|
-| Template | Not used for this example | `template` |
-| Instance | Completed product design package for Flow Approval Hub | `instance` |
+| Reference snapshot | Frozen DOS teaching example | `accepted` |
+| Downstream comparison | Used to compare a fresh instance with a completed design target | `accepted` |
 
 ## Design Principles
 - Keep policy, request state, and fulfillment boundaries explicit.
