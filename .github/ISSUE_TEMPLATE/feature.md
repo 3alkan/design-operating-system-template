@@ -1,6 +1,6 @@
 ---
 name: Feature
-about: Propose a design-system change or new template capability
+about: Propose a design-system change or new DOS capability
 title: "feat: [TBD]"
 labels: ["feature"]
 assignees: []

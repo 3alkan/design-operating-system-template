@@ -31,7 +31,7 @@ If code and artifacts conflict, artifacts win until updated.
   - Manual review confirms no critical placeholders remain in the instance.
 - Gate 3 (Ready To Merge Structural Changes)
   - Definition of Done in `docs/07-quality.md` is satisfied.
-  - PR template is fully completed.
+  - PR form is fully completed.
   - Review evidence and any configured CI checks pass.
 
 No product/application code is allowed before Gate 2.

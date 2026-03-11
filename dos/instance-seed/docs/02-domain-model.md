@@ -1,7 +1,7 @@
 ---
 artifact_type: domain-model
 artifact_id: DOM-001
-status: template
+status: seed
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - INV-001

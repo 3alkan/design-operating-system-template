@@ -1,5 +1,5 @@
 ---
-artifact_type: template-spec
+artifact_type: authoring-spec
 artifact_id: SPEC-101
 status: accepted
 owner: "reference-contact@example.invalid"
@@ -14,7 +14,7 @@ open_questions:
 # 10 - Authoring Conventions
 
 ## Purpose
-- Record how the reference product applies the template conventions.
+- Record how the reference product applies the DOS conventions.
 
 ## Required Front Matter
 - Every artifact in this example declares `artifact_type`, `artifact_id`, `status`, `owner`, `related_ids`, `assumptions`, and `open_questions`.
@@ -29,7 +29,7 @@ open_questions:
 - Core artifacts and ADRs in this example are `accepted`.
 
 ## Placeholder Policy
-- This completed instance contains no unresolved template placeholders.
+- This completed instance contains no unresolved seed placeholders.
 
 ## Traceability Rules
 - Every goal links to a scenario and capability.

@@ -15,9 +15,9 @@
 
 ## Artifact Impact
 - [ ] DOS shell docs (`README.md`, `AGENTS.md`, `docs/INSTANCE_CREATION.md`, `docs/MAINTAINER_PUBLISHING.md`)
-- [ ] Instance template spine (`dos/instance-template/docs/`)
-- [ ] Instance template repo files (`dos/instance-template/`)
-- [ ] DOS ADR templates (`dos/instance-template/docs/adr/`)
+- [ ] Instance seed spine (`dos/instance-seed/docs/`)
+- [ ] Instance seed repo files (`dos/instance-seed/`)
+- [ ] DOS ADR starters (`dos/instance-seed/docs/adr/`)
 - [ ] DOS patterns (`dos/patterns/`)
 - [ ] DOS reference example (`dos/reference/example-instance/`)
 - [ ] DOS reference walkthroughs (`dos/reference/walkthroughs/`)

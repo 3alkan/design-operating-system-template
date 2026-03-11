@@ -1,5 +1,5 @@
 ---
-artifact_type: template-spec
+artifact_type: authoring-spec
 artifact_id: SPEC-001
 status: active
 owner: "[PROJECT_CONTACT_EMAIL]"
@@ -14,7 +14,7 @@ open_questions:
 # 10 - Authoring Conventions
 
 ## Purpose
-- Define the required structure that makes the template readable by humans and safe for LLM-assisted updates.
+- Define the required structure that makes the seed readable by humans and safe for LLM-assisted updates.
 - Standardize IDs, statuses, placeholders, and cross-artifact references.
 
 ## Required Front Matter
@@ -39,8 +39,8 @@ Core spine documents must preserve their titled sections exactly. Each document 
 Artifact-specific sections may add more detail, but the required sections must remain present.
 
 ## Artifact ID Scheme
-- `SPEC-###`: template or project authoring conventions
-- `SYS-###`: system purpose or template-level statements
+- `SPEC-###`: seed or project authoring conventions
+- `SYS-###`: system purpose or seed-level statements
 - `ACT-###`: actor definitions
 - `GOAL-###`: goals and success criteria
 - `CON-###`: constraints
@@ -61,7 +61,7 @@ IDs must be unique within a completed project instance.
 
 ## Status Values
 Allowed statuses:
-- `template`
+- `seed`
 - `draft`
 - `candidate`
 - `accepted`
@@ -70,10 +70,10 @@ Allowed statuses:
 - `superseded`
 
 Use:
-- `template` for reusable skeletons.
+- `seed` for reusable skeletons.
 - `draft` or `candidate` for work in progress.
 - `accepted` for locked design decisions and completed artifacts.
-- `active` for stable template rules or operationally active items.
+- `active` for stable seed rules or operationally active items.
 
 ## Placeholder Policy
 Allowed placeholder tokens:

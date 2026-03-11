@@ -5,11 +5,11 @@ Use this guide to create a downstream product-design repo from the canonical DOS
 ## Lifecycle Model
 - Canonical DOS repo: this repository, which owns the frozen package under `dos/`.
 - Frozen DOS package: the versioned package boundary defined by `dos/` and `dos/dos-manifest.json`.
-- Downstream instance: a separate repo whose root is materialized from `dos/instance-template/`.
+- Downstream instance: a separate repo whose root is materialized from `dos/instance-seed/`.
 - Implementation-ready instance: a downstream instance that satisfies Gate 2.
 
 ## What Gets Copied
-- The contents of `dos/instance-template/` are copied into the downstream repo root.
+- The contents of `dos/instance-seed/` are copied into the downstream repo root.
 - `dos/reference/`, `dos/patterns/`, DOS publishing guides, and `dos/dos-manifest.json` are not copied by default.
 - Downstream lineage is written into `INSTANCE_METADATA.json`.
 

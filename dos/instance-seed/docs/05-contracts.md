@@ -1,7 +1,7 @@
 ---
 artifact_type: contracts
 artifact_id: CNT-001
-status: template
+status: seed
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CAP-001
@@ -25,7 +25,7 @@ open_questions:
 | `CNT-002` | Query | `[TBD]` | `CMP-002` | `CMP-001` |
 | `CNT-003` | Event | `[TBD]` | `CMP-002` | `CMP-003` |
 
-## Contract Template
+## Contract Seed
 ### Contract: `CNT-001` `[TBD]`
 - Intent: `[TBD]`
 - Trigger: `[TBD]`

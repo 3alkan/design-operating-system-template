@@ -1,12 +1,12 @@
 {
   "manifest_version": 1,
-  "dos_version": "0.4.0",
-  "dos_release_tag": "v0.4.0",
+  "dos_version": "0.5.0",
+  "dos_release_tag": "v0.5.0",
   "released_at": "2026-03-11",
-  "instance_template_root": "dos/instance-template",
+  "instance_seed_root": "dos/instance-seed",
   "reference_root": "dos/reference",
   "copy_paths": [
-    "dos/instance-template"
+    "dos/instance-seed"
   ],
   "exclude_paths": [
     "dos/README.md",
@@ -16,117 +16,117 @@
   ],
   "file_inventory": [
     {
-      "path": "dos/instance-template/.github/ISSUE_TEMPLATE/adr-proposal.md",
+      "path": "dos/instance-seed/.github/ISSUE_TEMPLATE/adr-proposal.md",
       "sha256": "5d316faa06157c3590cf3c485225e30b8a7a512fb34dd3e47bf53ed155a9a690",
       "bytes": 329
     },
     {
-      "path": "dos/instance-template/.github/ISSUE_TEMPLATE/bug.md",
+      "path": "dos/instance-seed/.github/ISSUE_TEMPLATE/bug.md",
       "sha256": "075f9977ca6f07ff6216d7528816e33f3eff8b3275b5321159850d9ea2afbaf3",
       "bytes": 421
     },
     {
-      "path": "dos/instance-template/.github/ISSUE_TEMPLATE/feature.md",
+      "path": "dos/instance-seed/.github/ISSUE_TEMPLATE/feature.md",
       "sha256": "8c9fd1074d8999c7ca04ae268d549a24a5af36043e15a8c3c190b28dc2bef087",
       "bytes": 487
     },
     {
-      "path": "dos/instance-template/.github/ISSUE_TEMPLATE/spike-research.md",
+      "path": "dos/instance-seed/.github/ISSUE_TEMPLATE/spike-research.md",
       "sha256": "53b7d64cb2bc63e7ccf6810d620586a1a30acc4f1b4e619d9ccfe229ab1ee187",
       "bytes": 510
     },
     {
-      "path": "dos/instance-template/.github/PULL_REQUEST_TEMPLATE.md",
+      "path": "dos/instance-seed/.github/PULL_REQUEST_TEMPLATE.md",
       "sha256": "40e13ddad6733ac55c239911fb73a4e251b69982043c5fc8ea8f17d2d99f0cad",
       "bytes": 1176
     },
     {
-      "path": "dos/instance-template/AGENTS.md",
-      "sha256": "8826f0e57e772d559e06c7344b6e07f3b13037ae6ec4b918cc1769b32ae84199",
-      "bytes": 2796
+      "path": "dos/instance-seed/AGENTS.md",
+      "sha256": "c3771ac164a790ac5ff2400dc99381184b66e943fd26e031813cffa19482c7f1",
+      "bytes": 2792
     },
     {
-      "path": "dos/instance-template/CONTRIBUTING.md",
-      "sha256": "e66d38ebbb1504b0fa2298955730ac122eef9f2c408ea2ac2c3de714798b3d10",
-      "bytes": 1137
-    },
-    {
-      "path": "dos/instance-template/docs/00-system-purpose.md",
-      "sha256": "b5f777fa9ffed51d09661bf399c0600b573c7300c16ee39ff7cc338c21b190c2",
-      "bytes": 2385
-    },
-    {
-      "path": "dos/instance-template/docs/01-product-scope.md",
-      "sha256": "de8a1a22ea5a0fb6478bd58747eeafc9bf8b3107a288aa87874049b0713c3015",
-      "bytes": 1803
-    },
-    {
-      "path": "dos/instance-template/docs/02-domain-model.md",
-      "sha256": "4d71abfd79d2e10043458896996bf7cf7d1bd09acedb1498a5230bb133bda60d",
-      "bytes": 1707
-    },
-    {
-      "path": "dos/instance-template/docs/03-scenarios.md",
-      "sha256": "2a36174b3268b6f0935ee5de454d3e54923e16e5bc7dc29bf7d937d986534966",
-      "bytes": 1697
-    },
-    {
-      "path": "dos/instance-template/docs/04-capabilities.md",
-      "sha256": "8bc2e73c0d9417234813172d662c1bbc6e8802d6e87dbc1d96a0e1f67e1a1809",
-      "bytes": 1617
-    },
-    {
-      "path": "dos/instance-template/docs/05-contracts.md",
-      "sha256": "dcd5106097caf67fe561661b972cf20504ad70c048b7cef6283f0e19e8162690",
-      "bytes": 1713
-    },
-    {
-      "path": "dos/instance-template/docs/06-architecture.md",
-      "sha256": "a7223b8a3d0cdbb8a1da616940d627477044215285a5e349b81ed96007c01273",
-      "bytes": 2472
-    },
-    {
-      "path": "dos/instance-template/docs/07-quality.md",
-      "sha256": "c143981b0dc6071fdc8795216c8eab13079e0dcd345e1727549b35da47fb3aa5",
-      "bytes": 2175
-    },
-    {
-      "path": "dos/instance-template/docs/08-operations.md",
-      "sha256": "7e44065d1bbf94ca4a19f0b1cf12e7159c51d871f0324f54fa1a3f160f296089",
-      "bytes": 1614
-    },
-    {
-      "path": "dos/instance-template/docs/09-traceability.md",
-      "sha256": "34e6c828e016d069b402452b5d9ef8b8a4e4c15908a18a89cf58e55425cd8f70",
-      "bytes": 1567
-    },
-    {
-      "path": "dos/instance-template/docs/10-authoring-conventions.md",
-      "sha256": "08df2206eac8f0a8c8c3901ba64c102063bcb796bad12cce148a20a0df300a1d",
-      "bytes": 4314
-    },
-    {
-      "path": "dos/instance-template/docs/adr/0000-template.md",
-      "sha256": "ea387efa44050287fa73c2996ca28248451efdfad5c385f2c93655c7cd38eff0",
+      "path": "dos/instance-seed/CONTRIBUTING.md",
+      "sha256": "78f42ff08f345cedf56f65bd4f6ba438fb8d3983964c1939dc12748b8ad86411",
       "bytes": 1133
     },
     {
-      "path": "dos/instance-template/docs/adr/README.md",
-      "sha256": "7c9a3d08a8d44b43840adb6d15461666390b04056029ffefb94331ca8e9dca8e",
-      "bytes": 1599
+      "path": "dos/instance-seed/docs/00-system-purpose.md",
+      "sha256": "c45459f57e059fd81d68d9a3c22dd490c7580a525011618cae71e119c99ca2e8",
+      "bytes": 2360
     },
     {
-      "path": "dos/instance-template/docs/diagrams/README.md",
+      "path": "dos/instance-seed/docs/01-product-scope.md",
+      "sha256": "8958be3dc006438f8511bdad423fb8695c9da7df4ee2be59bc5b1ff12f38ede8",
+      "bytes": 1798
+    },
+    {
+      "path": "dos/instance-seed/docs/02-domain-model.md",
+      "sha256": "7a98c513be5acc16b655032b819469c0808be459f500806e7325f04f61a43fb9",
+      "bytes": 1702
+    },
+    {
+      "path": "dos/instance-seed/docs/03-scenarios.md",
+      "sha256": "69fe750548a8f7be901877ed846f9235b3b50a1aef1c076ff06cb203bd4b5e9a",
+      "bytes": 1687
+    },
+    {
+      "path": "dos/instance-seed/docs/04-capabilities.md",
+      "sha256": "b644736e9765fb6d8343e818ddcd07570ca4165a1a0c39646ca38c6101cd53ba",
+      "bytes": 1612
+    },
+    {
+      "path": "dos/instance-seed/docs/05-contracts.md",
+      "sha256": "0ea8f7031f0f51256ca2b0462b8867d5bed9fd5bd4220726b056c6ebf7ff1a66",
+      "bytes": 1703
+    },
+    {
+      "path": "dos/instance-seed/docs/06-architecture.md",
+      "sha256": "029c59209ff10cb05416d184bf64d1e60f19844256f541809617586e8d463dd1",
+      "bytes": 2467
+    },
+    {
+      "path": "dos/instance-seed/docs/07-quality.md",
+      "sha256": "3d3d25d5389512cfc34135e1ee46a50d13a93985e297eea61891312837a9cf2f",
+      "bytes": 2164
+    },
+    {
+      "path": "dos/instance-seed/docs/08-operations.md",
+      "sha256": "d06d8c4d64cd23073c58ec5e9e1707574abf8d3db5199d9faa21e1c76bded5dd",
+      "bytes": 1609
+    },
+    {
+      "path": "dos/instance-seed/docs/09-traceability.md",
+      "sha256": "d495c1937becdf63a65fbda79bacdefb36e65554fb742d0aba011c8337e4e636",
+      "bytes": 1562
+    },
+    {
+      "path": "dos/instance-seed/docs/10-authoring-conventions.md",
+      "sha256": "2bcdcb6c9058386283f57229abd0dcbc0fe3907e0d3db1acba618b5cec45642c",
+      "bytes": 4285
+    },
+    {
+      "path": "dos/instance-seed/docs/adr/0000-seed.md",
+      "sha256": "da9aab978f0685396bb9e66742b34b2297db970e7b1fa9f1b69e0e48005c5e36",
+      "bytes": 1128
+    },
+    {
+      "path": "dos/instance-seed/docs/adr/README.md",
+      "sha256": "912a47cbf0c51bcd58173a9e9507a14563884abfbd65fa7a56038a67683df2a5",
+      "bytes": 1592
+    },
+    {
+      "path": "dos/instance-seed/docs/diagrams/README.md",
       "sha256": "2395d5e8db56fe5b34de1a1abff35f86965fff797000bd65ad228a6af76e8e1a",
       "bytes": 1444
     },
     {
-      "path": "dos/instance-template/README.md",
+      "path": "dos/instance-seed/README.md",
       "sha256": "5c818d93beac9aed8758342cd4bbafbc945dd9e44f94400c71619c893d5d4dea",
       "bytes": 1020
     },
     {
-      "path": "dos/instance-template/VERSION",
+      "path": "dos/instance-seed/VERSION",
       "sha256": "0cfaebbabd3345f81f9ff9b2fd3cab18dd7deab6b34e339782d6de81e14f5046",
       "bytes": 30
     },
@@ -177,13 +177,13 @@
     },
     {
       "path": "dos/README.md",
-      "sha256": "6b8f33c9f0839fed25bc08662e9ffee148bf6db649ed1eb9752e1417654d64b8",
-      "bytes": 744
+      "sha256": "52a55c8d633587c7f7154ecb78e235279207473d1736ee228596ff3672cd8621",
+      "bytes": 740
     },
     {
       "path": "dos/reference/example-instance/docs/00-system-purpose.md",
-      "sha256": "de35a320b02b44714626093ef661ab0da5bea611436c7d2c48b087daad36716f",
-      "bytes": 2251
+      "sha256": "e45fc8336be4b75d1819b21a559032c3cae500d6922b79f5cd7bf84f67518237",
+      "bytes": 2244
     },
     {
       "path": "dos/reference/example-instance/docs/01-product-scope.md",
@@ -197,8 +197,8 @@
     },
     {
       "path": "dos/reference/example-instance/docs/03-scenarios.md",
-      "sha256": "b703156ff22e4883387c8ca03cb422be1ee842273f639de13970bdd9a32259a0",
-      "bytes": 4301
+      "sha256": "69ef08c6534126d5df121eb01e526998a3cf923ab171ed345fbc27084c28d8f9",
+      "bytes": 4296
     },
     {
       "path": "dos/reference/example-instance/docs/04-capabilities.md",
@@ -207,8 +207,8 @@
     },
     {
       "path": "dos/reference/example-instance/docs/05-contracts.md",
-      "sha256": "bdf2775f1e43cc0027d5dd242b72c7d4398e67e4173560b30f99a9b0f05abb21",
-      "bytes": 5502
+      "sha256": "66374b9a7760be7b36a101c9a67c744cd326fb0e51f272eeacb98f469a0e50b2",
+      "bytes": 5497
     },
     {
       "path": "dos/reference/example-instance/docs/06-architecture.md",
@@ -232,8 +232,8 @@
     },
     {
       "path": "dos/reference/example-instance/docs/10-authoring-conventions.md",
-      "sha256": "2845924b26dc1d4511bde9a24abf8048c341f333f891884c5d177e2b53e864a1",
-      "bytes": 2336
+      "sha256": "7d9193d150047ddc6851631fefa98f420466dea6e04acff6a107a757c41a7b5f",
+      "bytes": 2325
     },
     {
       "path": "dos/reference/example-instance/docs/adr/0001-workflow-state-machine.md",
@@ -247,8 +247,8 @@
     },
     {
       "path": "dos/reference/example-instance/README.md",
-      "sha256": "23862b752bd5ac16727c23310b72a40ee10261f1c5ab30b008e71135268ebfdd",
-      "bytes": 970
+      "sha256": "91471cd451e4eb2f31119830dde2824c8e8b21fb2814006fd04c36079744a293",
+      "bytes": 965
     },
     {
       "path": "dos/reference/README.md",
@@ -257,9 +257,9 @@
     },
     {
       "path": "dos/reference/walkthroughs/README.md",
-      "sha256": "333eba0bdb58458fdb9939cc9d3e3dab1fc5b1b5a0cb3f21fec607965b708992",
-      "bytes": 388
+      "sha256": "80519752dca2366242476cf6d29a636a4b8d1448700de7be59d78795e546bd07",
+      "bytes": 384
     }
   ],
-  "dos_package_hash": "sha256:c699566155152f263dc06ecc9918f1aead915ea5f2f861008152690dc12e6036"
+  "dos_package_hash": "sha256:023666420fec47e1c11495873e0631964375b68054fbc88c95eff7dc36e3fc13"
 }

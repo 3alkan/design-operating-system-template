@@ -1,7 +1,7 @@
 ---
 artifact_type: quality
 artifact_id: NFR-001
-status: template
+status: seed
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CAP-001
@@ -56,7 +56,7 @@ open_questions:
 - Downstream teams can translate abstract checks into stack-specific test suites during implementation.
 
 ## Open Questions
-- Whether the template should prescribe severity levels for NFR failures.
+- Whether the DOS should prescribe severity levels for NFR failures.
 
 ## Related IDs
 - `NFR-001`

@@ -1,6 +1,6 @@
 ---
 name: Bug
-about: Report a defect in the template, reference example, review guidance, or collaboration workflow
+about: Report a defect in the DOS package, reference example, review guidance, or collaboration workflow
 title: "bug: [TBD]"
 labels: ["bug"]
 assignees: []

@@ -9,7 +9,7 @@ related_ids:
 assumptions:
   - "[ASSUMPTION] Structural decisions worth preserving will exist even in stack-independent designs."
 open_questions:
-  - "[OPEN QUESTION] Whether future versions need ADR templates for reversible experiments."
+  - "[OPEN QUESTION] Whether future versions need ADR starters for reversible experiments."
 ---
 
 # ADRs
@@ -35,7 +35,7 @@ open_questions:
 5. `deprecated`
 
 ## Authoring Rules
-- Use `0000-template.md`.
+- Use `0000-seed.md`.
 - Include impacted artifact IDs.
 - Include at least two alternatives.
 - Record rejected options and consequences.

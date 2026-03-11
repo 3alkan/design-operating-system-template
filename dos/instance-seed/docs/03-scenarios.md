@@ -1,7 +1,7 @@
 ---
 artifact_type: scenarios
 artifact_id: SCN-001
-status: template
+status: seed
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - ACT-001
@@ -25,7 +25,7 @@ open_questions:
 | `SCN-002` | `[TBD]` | `ACT-002` | `CAP-002` |
 | `SCN-003` | `[TBD]` | `ACT-001` | `CAP-003` |
 
-## Scenario Template
+## Scenario Seed
 ### Scenario: `SCN-001` `[TBD]`
 - Goal: `[TBD]`
 - Preconditions: `[TBD]`

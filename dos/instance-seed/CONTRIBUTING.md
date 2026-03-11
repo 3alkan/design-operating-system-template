@@ -3,7 +3,7 @@
 Thanks for improving this product-design instance.
 
 ## How To Propose Changes
-1. Open an issue using the templates in `.github/ISSUE_TEMPLATE/`.
+1. Open an issue using the forms in `.github/ISSUE_TEMPLATE/`.
 2. Describe the affected artifact IDs, the design problem, and the intended impact on traceability.
 3. Submit a PR using `.github/PULL_REQUEST_TEMPLATE.md`.
 

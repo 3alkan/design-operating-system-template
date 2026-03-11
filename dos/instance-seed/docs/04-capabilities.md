@@ -1,7 +1,7 @@
 ---
 artifact_type: capabilities
 artifact_id: CAP-001
-status: template
+status: seed
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - SCN-001

@@ -27,7 +27,7 @@ open_questions:
 | `CNT-104` | Event | Announce request state changes | `CMP-102` | `CMP-104`, `CMP-105` |
 | `CNT-105` | Event | Issue a fulfillment task for an approved request | `CMP-102` | `CMP-105` |
 
-## Contract Template
+## Contract Seed
 ### Contract: `CNT-101` Submit a new work request
 - Intent: `Create a request, validate required data, attach the applicable policy snapshot, and begin routing.`
 - Trigger: `Requester submits the intake form.`

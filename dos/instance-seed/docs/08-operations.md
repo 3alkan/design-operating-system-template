@@ -1,7 +1,7 @@
 ---
 artifact_type: operations
 artifact_id: OPS-001
-status: template
+status: seed
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - NFR-001

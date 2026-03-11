@@ -3,7 +3,7 @@
 This directory is the frozen canonical DOS package.
 
 ## Package Structure
-- `instance-template/`: the only subtree that is materialized into a downstream repo root.
+- `instance-seed/`: the only subtree that is materialized into a downstream repo root.
 - `patterns/`: frozen DOS reference patterns for humans and LLMs.
 - `reference/`: frozen DOS teaching material, including the bundled example instance and walkthroughs.
 - `dos-manifest.json`: machine-readable DOS version, file inventory, and package hash.

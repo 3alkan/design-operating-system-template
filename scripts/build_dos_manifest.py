@@ -71,9 +71,9 @@ def build_manifest(released_at: str | None, release_tag: str | None) -> dict[str
         "dos_version": dos_version,
         "dos_release_tag": release_tag or f"v{dos_version}",
         "released_at": released_at or date.today().isoformat(),
-        "instance_template_root": "dos/instance-template",
+        "instance_seed_root": "dos/instance-seed",
         "reference_root": "dos/reference",
-        "copy_paths": ["dos/instance-template"],
+        "copy_paths": ["dos/instance-seed"],
         "exclude_paths": [
             "dos/README.md",
             "dos/dos-manifest.json",

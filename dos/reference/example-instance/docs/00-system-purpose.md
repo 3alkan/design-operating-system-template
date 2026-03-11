@@ -17,8 +17,8 @@ open_questions:
 ## Purpose
 - Define the mission and completion standard for Flow Approval Hub.
 
-## Template Mission
-- Product or template name: `Flow Approval Hub`
+## System Mission
+- Product or system name: `Flow Approval Hub`
 - One-paragraph mission: `Flow Approval Hub is a work intake and approval platform that captures internal requests, evaluates approval policy, issues fulfillment tasks to downstream execution systems, and preserves a durable operator-friendly audit trail.`
 - Completion standard: `A developer or LLM can implement the product end to end in a chosen stack without inventing the product model, core workflows, runtime boundaries, or operational expectations.`
 
@@ -42,7 +42,7 @@ open_questions:
 
 ## Inputs
 - The reference product scope and operational needs.
-- Authoring conventions inherited from the template.
+- Authoring conventions inherited from the DOS seed.
 
 ## Outputs
 - The governing design objective for Flow Approval Hub.

@@ -1,8 +1,8 @@
 # Security Policy
 
 ## Scope
-This is a template repository. Security issues may include:
-- Exposed secrets or tokens in docs/templates/examples.
+This is the canonical DOS repository. Security issues may include:
+- Exposed secrets or tokens in docs, seed artifacts, or examples.
 - Unsafe guidance that could cause insecure defaults in downstream projects.
 - Vulnerabilities in repository automation/workflows (if present).
 

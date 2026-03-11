@@ -37,8 +37,8 @@ def target_is_non_empty(path: Path) -> bool:
     return path.exists() and any(path.iterdir())
 
 
-def copy_instance_template(target: Path, force: bool) -> None:
-    source = DOS_ROOT / "instance-template"
+def copy_instance_seed(target: Path, force: bool) -> None:
+    source = DOS_ROOT / "instance-seed"
     target.mkdir(parents=True, exist_ok=True)
     for item in source.iterdir():
         destination = target / item.name
@@ -110,7 +110,7 @@ def main() -> int:
     if target_is_non_empty(target) and not args.force:
         raise SystemExit("Target directory is not empty. Use --force to allow overwrite/merge.")
 
-    copy_instance_template(target, args.force)
+    copy_instance_seed(target, args.force)
     replace_placeholders(
         target,
         {

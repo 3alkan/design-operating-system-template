@@ -1,7 +1,7 @@
 ---
 artifact_type: system-purpose
 artifact_id: SYS-001
-status: template
+status: seed
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - GOAL-001
@@ -18,15 +18,15 @@ open_questions:
 - State why this repository exists and what a completed instance must enable.
 - Define the design quality bar before product-specific artifacts are written.
 
-## Template Mission
-- Product or template name: `[PROJECT_NAME]`
+## System Mission
+- Product or system name: `[PROJECT_NAME]`
 - One-paragraph mission: `[PROJECT_DESCRIPTION]`
 - Completion standard: a completed instance lets a capable developer or LLM implement the product end to end in a chosen stack with minimal guessing.
 
 ## Usage Modes
 | State | Description | Expected Status |
 |---|---|---|
-| Skeleton | Freshly materialized instance with unresolved project placeholders | `template` or `draft` |
+| Seed | Freshly materialized instance with unresolved project placeholders | `seed` or `draft` |
 | Active instance | Project-specific design package moving toward Gate 2 | `candidate` or `accepted` |
 
 ## Design Principles
@@ -43,11 +43,11 @@ open_questions:
 
 ## Inputs
 - Repository mission and intended users.
-- Template governance rules from `AGENTS.md`.
+- Instance governance rules from `AGENTS.md`.
 - Authoring conventions from `docs/10-authoring-conventions.md`.
 
 ## Outputs
-- The governing purpose for the template or downstream project.
+- The governing purpose for the seed or downstream project.
 - The standard used to judge whether a design is implementation-ready.
 
 ## Assumptions

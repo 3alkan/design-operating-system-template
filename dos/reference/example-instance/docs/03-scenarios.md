@@ -25,7 +25,7 @@ open_questions:
 | `SCN-102` | Approver reviews and decides a request | `ACT-102` | `CAP-102` |
 | `SCN-103` | Operator reconciles a delayed fulfillment update | `ACT-103` | `CAP-103` |
 
-## Scenario Template
+## Scenario Seed
 ### Scenario: `SCN-101` Submit a new work request
 - Goal: `Capture a valid request and route it into the approval workflow.`
 - Preconditions: `The requester is authenticated and has access to the chosen request type.`

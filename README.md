@@ -1,8 +1,8 @@
-# Design Operating System Template
+# Design Operating System
 
 Tech-stack-independent Design Operating System (DOS) for defining products end to end in a form that is abstractly implementation-ready.
 
-Current DOS version: `0.4.0`
+Current DOS version: `0.5.0`
 
 ## What This Repository Is
 - The canonical DOS repository, not a downstream product-design repo.
@@ -10,12 +10,12 @@ Current DOS version: `0.4.0`
 - A shared medium for architects, developers, and LLMs to maintain the canonical package and materialize downstream design instances.
 
 ## DOS Model
-- `dos/instance-template/` is the copyable downstream design package.
+- `dos/instance-seed/` is the copyable downstream design package.
 - `dos/patterns/` contains frozen DOS pattern assets for humans and LLMs.
 - `dos/reference/` contains frozen DOS teaching material, including the bundled example instance and walkthroughs.
 - `dos/dos-manifest.json` is the machine-readable package manifest for versioning, file inventory, and integrity data.
 
-The repo root belongs to the DOS itself. A downstream instance is created from `dos/instance-template/` and owns its own root from the first moment of materialization.
+The repo root belongs to the DOS itself. A downstream instance is created from `dos/instance-seed/` and owns its own root from the first moment of materialization.
 
 ## How To Use The DOS
 1. Read `docs/INSTANCE_CREATION.md` to understand canonical DOS repo vs downstream instance.
@@ -43,7 +43,7 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 
 ## Review Model
 - Review the repo shell when changing DOS publishing, onboarding, or contributor workflow.
-- Review `dos/instance-template/` when changing the downstream instance contract.
+- Review `dos/instance-seed/` when changing the downstream instance contract.
 - Review `dos/patterns/` and `dos/reference/` when changing teaching/reference material.
 - Review `dos/dos-manifest.json` whenever the frozen DOS package changes.
 
@@ -57,9 +57,9 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 - Replace `LICENSE` if your downstream project needs a different license.
 
 ## Community Profile Checklist Hint
-This template includes common community health files used by GitHub community profile checks:
+This repo includes common community health files used by GitHub community profile checks:
 - `LICENSE`
 - `CONTRIBUTING.md`
 - `CODE_OF_CONDUCT.md`
 - `SECURITY.md`
-- issue and PR templates in `.github/`
+- issue and PR forms in `.github/`

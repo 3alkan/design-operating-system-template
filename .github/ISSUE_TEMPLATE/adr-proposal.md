@@ -1,6 +1,6 @@
 ---
 name: ADR proposal
-about: Propose a structural design decision for the template or reference example
+about: Propose a structural design decision for the DOS package or reference example
 title: "adr: [TBD]"
 labels: ["adr"]
 assignees: []
