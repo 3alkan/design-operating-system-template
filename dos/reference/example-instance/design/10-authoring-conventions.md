@@ -29,7 +29,7 @@ open_questions:
 - Core artifacts and ADRs in this example are `accepted`.
 
 ## Placeholder Policy
-- This completed instance contains no unresolved seed placeholders.
+- This completed instance contains no unresolved project placeholders.
 
 ## Traceability Rules
 - Every goal links to a scenario and capability.

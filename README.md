@@ -2,7 +2,7 @@
 
 Tech-stack-independent Design Operating System (DOS) for producing product-design repositories that are abstractly implementation-ready.
 
-Current DOS version: `0.7.0`
+Current DOS version: `0.8.0`
 
 ## What This Repo Owns
 - The canonical DOS source.
@@ -15,7 +15,7 @@ This repository improves, documents, and packages the DOS. It is not the actual 
 ## What The DOS Produces
 - The actual product produced by the DOS is a project-specific instance repository.
 - That instance is materialized from `dos/instance-seed/`.
-- The instance is where developers and LLMs collaborate to design a product end to end.
+- The instance is where developers and LLMs collaborate to design and implement a product end to end.
 - The target state is a stack-independent but implementation-ready design repo that a capable LLM can use to implement the product end to end with minimal guessing.
 
 ## DOS Model
@@ -36,8 +36,8 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 3. Review `dos/README.md` to understand the frozen package boundary.
 4. Inspect `dos/patterns/` and `dos/reference/` as teaching material, not as downstream product scope by default.
 5. Regenerate `dos/dos-manifest.json` with `python scripts/build_dos_manifest.py` whenever the frozen package changes.
-6. Materialize a downstream repo with `python scripts/instantiate_dos.py --target <path> --instance-name <name> --instance-version <x.y.z>`.
-7. Fill the materialized instance root and reach Gate 2 before implementation begins.
+6. Materialize a downstream repo with `python scripts/instantiate_dos.py --target <path> --instance-name <name> --design-version <x.y.z>`.
+7. Fill `design/`, reach Gate 2, and start product code in `implementation/`.
 
 ## Repository Structure
 - `dos/`
@@ -57,7 +57,7 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 
 ## Review Model
 - Review the repo shell when changing mission, DOS publishing, onboarding, or contributor workflow.
-- Review `dos/instance-seed/` when changing the packaged downstream seed.
+- Review `dos/instance-seed/` when changing the packaged downstream product repo.
 - Review `dos/patterns/` and `dos/reference/` when changing teaching/reference material.
 - Review `dos/dos-manifest.json` whenever the frozen DOS package changes.
 

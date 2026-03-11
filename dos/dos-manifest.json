@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
-  "dos_version": "0.7.0",
-  "dos_release_tag": "v0.7.0",
+  "dos_version": "0.8.0",
+  "dos_release_tag": "v0.8.0",
   "released_at": "2026-03-11",
   "hash_algorithm": "sha3-256",
   "instance_seed_root": "dos/instance-seed",
@@ -38,98 +38,103 @@
     },
     {
       "path": "dos/instance-seed/.github/PULL_REQUEST_TEMPLATE.md",
-      "sha3_256": "cf1a0a695a6ca1e7055eddd4155f37added125a4f680080140abf9273eac3a6f",
-      "bytes": 1176
+      "sha3_256": "96ae1af2f9e43dcfc9ed1523c33d78fb4586d6f74e947ad3dd5c2f22b0353100",
+      "bytes": 1254
     },
     {
       "path": "dos/instance-seed/AGENTS.md",
-      "sha3_256": "a12de0d8e5e99e13e4e7ff003b923311133dc53ba784f1a4a30124471c3f4492",
-      "bytes": 2811
+      "sha3_256": "d7fd385e8c557af6c31c746666011042b0b28871068ec96c1768184c9c6124c7",
+      "bytes": 3071
     },
     {
       "path": "dos/instance-seed/CONTRIBUTING.md",
-      "sha3_256": "14eaecebb1a9071b407e30ed4c89f26c3a253f7536e592eb4d06dd2ae1bbbe63",
-      "bytes": 1133
+      "sha3_256": "63a9cc7f59df9bd9aad1429e322a4b87e74b53746c04d9cab0254717abb358e5",
+      "bytes": 1176
     },
     {
-      "path": "dos/instance-seed/docs/00-system-purpose.md",
-      "sha3_256": "555201c6c584b84bb10c07ffb53e96dc9016255938b07d01933573398d9d9dbf",
-      "bytes": 2314
+      "path": "dos/instance-seed/design/00-system-purpose.md",
+      "sha3_256": "21a078206a6caf2e1eb09fe2a658d97197111e04437e12217c5bb91b06d27049",
+      "bytes": 2315
     },
     {
-      "path": "dos/instance-seed/docs/01-product-scope.md",
-      "sha3_256": "c5c531c56aa7d3a7bfbb51ef7db76bc9a8143d7d888f19d6ee8cca23556d6d15",
-      "bytes": 1786
+      "path": "dos/instance-seed/design/01-product-scope.md",
+      "sha3_256": "09bd49a538999ab7966b3f805c85bbf7ba209136a5cde0a01bbba528f06f5c3d",
+      "bytes": 1787
     },
     {
-      "path": "dos/instance-seed/docs/02-domain-model.md",
-      "sha3_256": "8cd85fb70563c80cea9882b4b10b57aad8eb709cb42eef4405623db4d5796256",
-      "bytes": 1688
+      "path": "dos/instance-seed/design/02-domain-model.md",
+      "sha3_256": "22b47d20b33eab129c79e193f5b055ea080c1d4bb365aa693c176a48a3fb305c",
+      "bytes": 1689
     },
     {
-      "path": "dos/instance-seed/docs/03-scenarios.md",
-      "sha3_256": "894070873e33bb141aa64d3712dba2b14174e65565d29da8daba94e580733cda",
-      "bytes": 1693
+      "path": "dos/instance-seed/design/03-scenarios.md",
+      "sha3_256": "3edf40cf5342abc5e8e170d167855139b13bb6379bb5adcd857c87f47a6ba972",
+      "bytes": 1695
     },
     {
-      "path": "dos/instance-seed/docs/04-capabilities.md",
-      "sha3_256": "abc3d19c6154e621e0973ac59b8057f474d77b8a9dfda4008164a8d61bd71631",
-      "bytes": 1613
+      "path": "dos/instance-seed/design/04-capabilities.md",
+      "sha3_256": "ac789266c9ae9ba869c248f68df98c49f2d8312e53105dfdf9967a1e3a9c3f90",
+      "bytes": 1616
     },
     {
-      "path": "dos/instance-seed/docs/05-contracts.md",
-      "sha3_256": "1c9ae8b65726fed12a1f334b16e4f6ed728cab4ae6aaee43ca4e32098642eb50",
-      "bytes": 1693
+      "path": "dos/instance-seed/design/05-contracts.md",
+      "sha3_256": "90c64c49b66eb1292d02533a948ebab2f4edad30645d8ff2b2e83bb3d4ea6963",
+      "bytes": 1697
     },
     {
-      "path": "dos/instance-seed/docs/06-architecture.md",
-      "sha3_256": "1b07c12cebe1b4ee752d60f950182142356284a008260117a1d6ed157c5a3f6b",
-      "bytes": 2468
+      "path": "dos/instance-seed/design/06-architecture.md",
+      "sha3_256": "38316bcae9ecf37e400d2c5afa0b58a57026e300d21b830350cfaab25363f67d",
+      "bytes": 2471
     },
     {
-      "path": "dos/instance-seed/docs/07-quality.md",
-      "sha3_256": "d8d9d6bfef953e29d9a711d13766558d7880fbef279fc814fbdb8c3348613bfe",
-      "bytes": 2145
+      "path": "dos/instance-seed/design/07-quality.md",
+      "sha3_256": "182f33b9c0eb2dca3caef2ac83f8b114b9aeb83953d89be7e42a57f62f72ebdb",
+      "bytes": 2150
     },
     {
-      "path": "dos/instance-seed/docs/08-operations.md",
-      "sha3_256": "f11d90ac3c0326e14d7fa0dfc411d1629de4b060e687e84689e7c3e6a7e98c32",
-      "bytes": 1596
+      "path": "dos/instance-seed/design/08-operations.md",
+      "sha3_256": "a4d27fda0a60281ba9debbe6cb52b974435fc1afdc0d9a689b7c34a696974492",
+      "bytes": 1598
     },
     {
-      "path": "dos/instance-seed/docs/09-traceability.md",
-      "sha3_256": "7104a6a2429c80c3cbbec145213001a09a646da7c915bad8b0d4a3c888218e68",
-      "bytes": 1563
+      "path": "dos/instance-seed/design/09-traceability.md",
+      "sha3_256": "79d73afbaccf08137a0fd50182bf2bdfd57de2b43989b397c1e580108ab9fe14",
+      "bytes": 1567
     },
     {
-      "path": "dos/instance-seed/docs/10-authoring-conventions.md",
-      "sha3_256": "9d06020e561d3487327ced02a33f160a157a719997eed5cdc7b56f18d75914e4",
-      "bytes": 4208
+      "path": "dos/instance-seed/design/10-authoring-conventions.md",
+      "sha3_256": "4e75d1cab8e92e9943c341cf16558f84e814d842f0c334abaf5acc2de35791da",
+      "bytes": 4229
     },
     {
-      "path": "dos/instance-seed/docs/adr/0000-record.md",
+      "path": "dos/instance-seed/design/adr/0000-record.md",
       "sha3_256": "459ab95e22266dd4992b4f3f76dccf313f500556dc97afd0c801a3b3ee5e7c30",
       "bytes": 1129
     },
     {
-      "path": "dos/instance-seed/docs/adr/README.md",
-      "sha3_256": "47f17c937a6856a1b09de4d0efb55a10c7120ba5c7d1bf6306b17312295fe2b2",
-      "bytes": 1585
+      "path": "dos/instance-seed/design/adr/README.md",
+      "sha3_256": "beb55917baa260d8717de6d877782256af02529d56489adb83e64ad2564d9891",
+      "bytes": 1586
     },
     {
-      "path": "dos/instance-seed/docs/diagrams/README.md",
+      "path": "dos/instance-seed/design/diagrams/README.md",
       "sha3_256": "88d555060ed4d856ad6dbfdb4219b3208a6540fa094546e99e7e69f1423ac1f1",
       "bytes": 1444
     },
     {
+      "path": "dos/instance-seed/implementation/README.md",
+      "sha3_256": "9fe9592b710381f24669a88427f1147e6aab13fce53444f2c2d2398f65ede437",
+      "bytes": 615
+    },
+    {
       "path": "dos/instance-seed/README.md",
-      "sha3_256": "70f4f34efcfd022df2a486a15d6a4ef2405e1eacebbb08d2e7f7f4ba36b91243",
-      "bytes": 1392
+      "sha3_256": "4fbe01670428e4c1171a2b4f9750723790bf9beae9698e37c3192e381956bda0",
+      "bytes": 1709
     },
     {
       "path": "dos/instance-seed/VERSION",
-      "sha3_256": "e27c7b5125dd78a22e4da8845c8118e8764a7919ba608678e4439743d0e21db8",
-      "bytes": 30
+      "sha3_256": "ba67d8c39f913113333cd54d6d6c21cc731b8107884e4236b1a6bf758bf90366",
+      "bytes": 52
     },
     {
       "path": "dos/patterns/01-sync-request-response.md",
@@ -182,74 +187,79 @@
       "bytes": 740
     },
     {
-      "path": "dos/reference/example-instance/docs/00-system-purpose.md",
+      "path": "dos/reference/example-instance/design/00-system-purpose.md",
       "sha3_256": "794f17f30c2d6bc31ac037395955e5f7116436d147796d5c7c2c9cf65d9592b3",
       "bytes": 2244
     },
     {
-      "path": "dos/reference/example-instance/docs/01-product-scope.md",
-      "sha3_256": "244e42f4bebd2fb0cea0f6c9604f1d36c03a04d8c868d0d3b4039f4a3c641561",
-      "bytes": 3447
+      "path": "dos/reference/example-instance/design/01-product-scope.md",
+      "sha3_256": "adaf39896a2c70b95894900dfe416aa0db2bf5f934e29f593bd75a09a988b4ba",
+      "bytes": 3448
     },
     {
-      "path": "dos/reference/example-instance/docs/02-domain-model.md",
-      "sha3_256": "426cb81ff928855927024515c210d54b7e11a113b490784eb072d4dbb6f3762a",
-      "bytes": 2960
+      "path": "dos/reference/example-instance/design/02-domain-model.md",
+      "sha3_256": "c5c2af1e649c6b2b656498a385912e25ea28c813ef00345680c858fc86f6347d",
+      "bytes": 2961
     },
     {
-      "path": "dos/reference/example-instance/docs/03-scenarios.md",
-      "sha3_256": "004ada7f08b5c3820fc14c864dbdf5d9515248d0fdd97b35592f81e63a331f1f",
-      "bytes": 4296
+      "path": "dos/reference/example-instance/design/03-scenarios.md",
+      "sha3_256": "991ce4e90617da243c97705455390e810ed0b8e7cef0dfae3251fd6b0506670e",
+      "bytes": 4298
     },
     {
-      "path": "dos/reference/example-instance/docs/04-capabilities.md",
-      "sha3_256": "8a220d1ce30aad0f00c934a2ac905dfdcc82b5b711029bb965296b6eb135965d",
-      "bytes": 3782
+      "path": "dos/reference/example-instance/design/04-capabilities.md",
+      "sha3_256": "f2487239adf3111e0b5972399122d490efa10ea02993d73709e667440f2cabee",
+      "bytes": 3787
     },
     {
-      "path": "dos/reference/example-instance/docs/05-contracts.md",
-      "sha3_256": "7161aa68233a1a139415ea0353402b5fa9473dcbd0bd794c73c77367716001f5",
-      "bytes": 5497
+      "path": "dos/reference/example-instance/design/05-contracts.md",
+      "sha3_256": "aa9d81949355c7248a5dfbc3d5d05400ff4c3edfa701c14888370b5897eaf610",
+      "bytes": 5501
     },
     {
-      "path": "dos/reference/example-instance/docs/06-architecture.md",
-      "sha3_256": "933a778e0c8c35c098721be13d09d265c456d2a0f9dafc4b270805c4bcffacfa",
-      "bytes": 6488
+      "path": "dos/reference/example-instance/design/06-architecture.md",
+      "sha3_256": "4725d85b1f9f8238c643f06ca90b3a3e12d0a718154af2395c435988b786ccc4",
+      "bytes": 6491
     },
     {
-      "path": "dos/reference/example-instance/docs/07-quality.md",
-      "sha3_256": "32544fea6cac0152dde2c79941629eafad70cd64bb90595ae64338ed4e26646e",
-      "bytes": 2943
+      "path": "dos/reference/example-instance/design/07-quality.md",
+      "sha3_256": "74fcac7917a6330feec745f5a5d9d878a051c0d000b68b46d1a77c383f7bf3b6",
+      "bytes": 2948
     },
     {
-      "path": "dos/reference/example-instance/docs/08-operations.md",
-      "sha3_256": "a863efe9616f4ee254c3d411712f676faf1f548b491cadfe03c3e642576e2075",
-      "bytes": 3502
+      "path": "dos/reference/example-instance/design/08-operations.md",
+      "sha3_256": "57b172a8d610ecd29aec52ab97e080e96ac57ee8e364455f586333ba0f5e4294",
+      "bytes": 3504
     },
     {
-      "path": "dos/reference/example-instance/docs/09-traceability.md",
-      "sha3_256": "07a017b8e9443ea2bf087a83aecaee67ad91007924b0bf98a28cc729009e98ee",
-      "bytes": 2141
+      "path": "dos/reference/example-instance/design/09-traceability.md",
+      "sha3_256": "baa90794179857a676e8c82c270a5359b5ed8c8f2330b180ddac4c30cb8580e1",
+      "bytes": 2145
     },
     {
-      "path": "dos/reference/example-instance/docs/10-authoring-conventions.md",
-      "sha3_256": "34f1f7d6a426f4c7025aa31602408e8ed5c9dda015901c95790e1cabfb4f5afa",
-      "bytes": 2325
+      "path": "dos/reference/example-instance/design/10-authoring-conventions.md",
+      "sha3_256": "885424b21458a459fde118db465695d2d4322a03c6ec9d7a8b1d5b596327933a",
+      "bytes": 2327
     },
     {
-      "path": "dos/reference/example-instance/docs/adr/0001-workflow-state-machine.md",
+      "path": "dos/reference/example-instance/design/adr/0001-workflow-state-machine.md",
       "sha3_256": "3154c47788718b6486a8d5cca84561262020878b8a7308d8c3da2848255e8ce0",
       "bytes": 2522
     },
     {
-      "path": "dos/reference/example-instance/docs/adr/0002-append-only-audit-and-additive-contracts.md",
+      "path": "dos/reference/example-instance/design/adr/0002-append-only-audit-and-additive-contracts.md",
       "sha3_256": "5e0d6119556653a9d20c413c313f60bc4cc5f824d344342260aff5c86e071cc9",
       "bytes": 2551
     },
     {
+      "path": "dos/reference/example-instance/implementation/README.md",
+      "sha3_256": "4aca983288be2ba2186263349f0f79d653ab892fecde3a8d02d6ddfc12900b32",
+      "bytes": 268
+    },
+    {
       "path": "dos/reference/example-instance/README.md",
-      "sha3_256": "a5815a0de8cb5b9856110e6e504706569823c15ae6ca35d4da0141f9b9c209a8",
-      "bytes": 965
+      "sha3_256": "6173b80962ef9fc3992cee13be2eaf32d2ee39e45d30da2d0b15d11168187c7c",
+      "bytes": 1092
     },
     {
       "path": "dos/reference/README.md",
@@ -258,9 +268,9 @@
     },
     {
       "path": "dos/reference/walkthroughs/README.md",
-      "sha3_256": "9bfaf2db329723b14cc55260d99ecd8c155032f954b639c834556e612071b562",
-      "bytes": 384
+      "sha3_256": "d623e9666e181abda4a8c4a2b57bc3067bb9fc515b8ace0041e46b6c19bf4ca6",
+      "bytes": 408
     }
   ],
-  "dos_package_hash": "sha3-256:450177d4f296acc1f6d9295636b5c1408a875dcb7334e912332d87ffc018691b"
+  "dos_package_hash": "sha3-256:5766055404daddd4571a11b79ecaede10c86c927de1bf3496d8d9700ef4d12aa"
 }

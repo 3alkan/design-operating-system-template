@@ -79,6 +79,7 @@ Allowed placeholder tokens:
 - `[PROJECT_DESCRIPTION]`
 - `[PROJECT_CONTACT_EMAIL]`
 - `INSTANCE_DESIGN_VERSION`
+- `PRODUCT_VERSION`
 - `[TBD]`
 - `[ASSUMPTION]`
 - `[OPEN QUESTION]`
@@ -93,7 +94,7 @@ Rules:
 - Every `SCN` must link to at least one `CAP`.
 - Every `CAP` must link to at least one `CNT`, one `CMP`, and one `CHK`.
 - Every `CNT` must link to at least one `CMP`.
-- Every `CMP` used in architecture must appear in `docs/09-traceability.md`.
+- Every `CMP` used in architecture must appear in `design/09-traceability.md`.
 - Accepted ADRs must link to impacted components, contracts, or cross-cutting rules.
 
 ## Authoring Rules For Humans And LLMs

@@ -44,9 +44,9 @@ open_questions:
 - [ ] Traceability rows exist for all active artifacts.
 
 ## Inputs
-- Capabilities from `docs/04-capabilities.md`.
-- Contracts and architecture from `docs/05-contracts.md` and `docs/06-architecture.md`.
-- Operational needs from `docs/08-operations.md`.
+- Capabilities from `design/04-capabilities.md`.
+- Contracts and architecture from `design/05-contracts.md` and `design/06-architecture.md`.
+- Operational needs from `design/08-operations.md`.
 
 ## Outputs
 - The review and verification bar for a completed instance.

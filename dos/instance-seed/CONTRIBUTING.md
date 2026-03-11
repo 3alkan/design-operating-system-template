@@ -10,11 +10,11 @@ Thanks for improving this product-design instance.
 ## Contribution Rules
 - No product/application code is allowed before Gate 2.
 - Product/application code is allowed after Gate 2.
-- Artifacts remain the source of truth, and structural code changes must update the relevant artifacts and traceability rules together.
-- Placeholder tokens such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, `INSTANCE_DESIGN_VERSION`, `[TBD]`, `[ASSUMPTION]`, and `[OPEN QUESTION]` may remain only where the authoring conventions allow them.
+- `design/` remains the source of truth, and structural code changes in `implementation/` must update the relevant artifacts and traceability rules together.
+- Placeholder tokens such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, `INSTANCE_DESIGN_VERSION`, `PRODUCT_VERSION`, `[TBD]`, `[ASSUMPTION]`, and `[OPEN QUESTION]` may remain only where the authoring conventions allow them.
 
 ## Authoring Rules
-- Follow `docs/10-authoring-conventions.md`.
+- Follow `design/10-authoring-conventions.md`.
 - Use fixed section headings and front matter keys.
 - Assign stable artifact IDs and maintain `related_ids`.
 - Use Mermaid-only diagrams in fenced ` ```mermaid ` blocks.

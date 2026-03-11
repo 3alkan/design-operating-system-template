@@ -5,8 +5,8 @@ This repository is the canonical Design Operating System (DOS) repo. It is not a
 ## Source Of Truth (DOS Repo)
 
 - `docs/DOS_MISSION.md`: canonical DOS goal, boundary, and success criteria.
-- `dos/instance-seed/docs/00-system-purpose.md` through `dos/instance-seed/docs/10-authoring-conventions.md`: the downstream instance artifact contract.
-- `dos/instance-seed/docs/adr/`: ADR starters and ADR guidance that ship with downstream instances.
+- `dos/instance-seed/design/00-system-purpose.md` through `dos/instance-seed/design/10-authoring-conventions.md`: the downstream instance artifact contract.
+- `dos/instance-seed/design/adr/`: ADR starters and ADR guidance that ship with downstream instances.
 - `dos/patterns/`: frozen DOS reference patterns.
 - `dos/reference/`: frozen DOS teaching material, including the example instance.
 - `dos/dos-manifest.json`: canonical package version, inventory, and integrity metadata.
@@ -15,7 +15,7 @@ If repo shell docs and `dos/` conflict, `dos/` wins until updated.
 
 ## Boundary
 - Root repo files such as `README.md`, `AGENTS.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `VERSION`, `docs/`, `.github/`, and `scripts/` are DOS-repo-owned surfaces.
-- `dos/instance-seed/` is the packaged seed for downstream instances, not the active root of this repo.
+- `dos/instance-seed/` is the packaged downstream product repo seed, not the active root of this repo.
 - In a downstream instance created from this DOS, the materialized root artifacts become that project’s source of truth.
 
 ## DOS Package Gates
@@ -32,10 +32,11 @@ Downstream implementation-readiness gates belong to `dos/instance-seed/AGENTS.md
 
 ## Artifacts Are The Contract
 - Any change to downstream design structure must update the relevant files under `dos/instance-seed/`.
+- Any change to the default design-to-implementation lifecycle must update the relevant packaged instance files under `dos/instance-seed/`.
 - Any change to DOS goals, boundary, or success criteria must update `docs/DOS_MISSION.md` and any affected root-level DOS files.
 - Any change to DOS repo shell behavior, publishing flow, or contributor workflow must update the relevant root-level DOS files.
 - Any change to DOS teaching/reference material must update the relevant files under `dos/patterns/` or `dos/reference/`.
-- Fixed structural decisions that ship with downstream instances must be recorded in `dos/instance-seed/docs/adr/`.
+- Fixed structural decisions that ship with downstream instances must be recorded in `dos/instance-seed/design/adr/`.
 - PRs that change the DOS package without matching artifact updates are not review-ready.
 
 ## Codex Workflow In This Repo

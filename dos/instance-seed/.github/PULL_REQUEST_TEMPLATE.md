@@ -8,18 +8,19 @@
 - Design impact:
 
 ## Artifact Impact
-- [ ] System purpose (`docs/00-system-purpose.md`)
-- [ ] Product scope (`docs/01-product-scope.md`)
-- [ ] Domain model (`docs/02-domain-model.md`)
-- [ ] Scenarios (`docs/03-scenarios.md`)
-- [ ] Capabilities (`docs/04-capabilities.md`)
-- [ ] Contracts (`docs/05-contracts.md`)
-- [ ] Architecture (`docs/06-architecture.md`)
-- [ ] Quality (`docs/07-quality.md`)
-- [ ] Operations (`docs/08-operations.md`)
-- [ ] Traceability (`docs/09-traceability.md`)
-- [ ] Authoring conventions (`docs/10-authoring-conventions.md`)
-- [ ] ADR (`docs/adr/`)
+- [ ] System purpose (`design/00-system-purpose.md`)
+- [ ] Product scope (`design/01-product-scope.md`)
+- [ ] Domain model (`design/02-domain-model.md`)
+- [ ] Scenarios (`design/03-scenarios.md`)
+- [ ] Capabilities (`design/04-capabilities.md`)
+- [ ] Contracts (`design/05-contracts.md`)
+- [ ] Architecture (`design/06-architecture.md`)
+- [ ] Quality (`design/07-quality.md`)
+- [ ] Operations (`design/08-operations.md`)
+- [ ] Traceability (`design/09-traceability.md`)
+- [ ] Authoring conventions (`design/10-authoring-conventions.md`)
+- [ ] ADR (`design/adr/`)
+- [ ] Implementation (`implementation/`)
 - [ ] Instance lineage (`INSTANCE_METADATA.json`)
 - [ ] No artifact changes
 
@@ -29,7 +30,7 @@
 
 ## Guardrails
 - [ ] This PR respects the current gate model.
-- [ ] If product/application code changed after Gate 2, related structural artifacts were updated.
+- [ ] If product/application code changed after Gate 2, related structural artifacts in `design/` were updated.
 - [ ] Structural changes update traceability and ADRs where required.
 - [ ] Any diagrams are Mermaid-only and embedded in Markdown.
 - [ ] Any new artifact IDs are unique and follow the conventions.

@@ -42,8 +42,8 @@ open_questions:
 - Note user-visible latency or consistency expectations when relevant.
 
 ## Inputs
-- Actors and goals from `docs/01-product-scope.md`.
-- Concepts and invariants from `docs/02-domain-model.md`.
+- Actors and goals from `design/01-product-scope.md`.
+- Concepts and invariants from `design/02-domain-model.md`.
 
 ## Outputs
 - Concrete runtime journeys used to derive capabilities, contracts, and tests.

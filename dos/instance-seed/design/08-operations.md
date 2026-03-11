@@ -46,8 +46,8 @@ open_questions:
   - `[TBD]`
 
 ## Inputs
-- Architecture and risks from `docs/06-architecture.md`.
-- Quality checks from `docs/07-quality.md`.
+- Architecture and risks from `design/06-architecture.md`.
+- Quality checks from `design/07-quality.md`.
 
 ## Outputs
 - An operational model and support baseline tied to the design.

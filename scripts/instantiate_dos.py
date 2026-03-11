@@ -91,12 +91,22 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Materialize a downstream instance from the canonical DOS package.")
     parser.add_argument("--target", required=True, help="Path to the downstream instance root.")
     parser.add_argument("--instance-name", required=True, help="Value for [PROJECT_NAME].")
-    parser.add_argument("--instance-version", required=True, help="Value for INSTANCE_DESIGN_VERSION.")
+    parser.add_argument("--design-version", help="Value for INSTANCE_DESIGN_VERSION.")
+    parser.add_argument("--instance-version", help="Deprecated alias for --design-version.")
+    parser.add_argument("--product-version", default="", help="Value for PRODUCT_VERSION.")
     parser.add_argument("--contact-email", default="", help="Value for [PROJECT_CONTACT_EMAIL].")
     parser.add_argument("--project-description", default="", help="Value for [PROJECT_DESCRIPTION].")
     parser.add_argument("--source-repo", default="", help="Source DOS repository identifier.")
     parser.add_argument("--force", action="store_true", help="Allow materialization into a non-empty target.")
     args = parser.parse_args()
+
+    design_version = args.design_version or args.instance_version
+    if args.design_version and args.instance_version and args.design_version != args.instance_version:
+        raise SystemExit("--design-version and --instance-version must match when both are provided.")
+    if not design_version:
+        raise SystemExit("Provide --design-version. --instance-version is supported temporarily as a deprecated alias.")
+    if args.instance_version and not args.design_version:
+        print("warning: --instance-version is deprecated; use --design-version", flush=True)
 
     manifest = load_manifest()
     current_hash = compute_package_hash()
@@ -117,13 +127,16 @@ def main() -> int:
             "[PROJECT_NAME]": args.instance_name,
             "[PROJECT_DESCRIPTION]": args.project_description,
             "[PROJECT_CONTACT_EMAIL]": args.contact_email,
-            "INSTANCE_DESIGN_VERSION=X.X.X": f"INSTANCE_DESIGN_VERSION={args.instance_version}",
+            "INSTANCE_DESIGN_VERSION=X.X.X": f"INSTANCE_DESIGN_VERSION={design_version}",
+            "PRODUCT_VERSION=X.X.X": (
+                f"PRODUCT_VERSION={args.product_version}" if args.product_version else ""
+            ),
         },
     )
     write_instance_metadata(
         target,
         manifest,
-        args.instance_version,
+        design_version,
         args.source_repo or REPO_ROOT.as_posix(),
     )
     print(f"materialized downstream instance at {target}")

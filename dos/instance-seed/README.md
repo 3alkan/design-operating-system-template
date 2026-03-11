@@ -7,15 +7,17 @@ A completed instance should let developers and LLMs collaborate to design a prod
 ## What This Instance Owns
 - The root of this repo belongs to the product design instance.
 - `INSTANCE_METADATA.json` records origin metadata for this instance.
-- `VERSION` records the instance design version.
-- `docs/` contains the instance artifact spine and is the design source of truth.
+- `VERSION` records both the instance design version and the product version.
+- `design/` contains the artifact spine and remains the design source of truth.
+- `implementation/` is the default location for product code after Gate 2.
 
 ## First Steps
 1. Replace `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, and `[PROJECT_CONTACT_EMAIL]`.
 2. Set `INSTANCE_DESIGN_VERSION` in `VERSION`.
-3. Fill `docs/00-system-purpose.md` through `docs/10-authoring-conventions.md`.
-4. Add and accept at least two ADRs before implementation begins.
-5. Reach Gate 2 before introducing product/application code.
+3. Set `PRODUCT_VERSION` if implementation planning or release tracking already exists.
+4. Fill `design/00-system-purpose.md` through `design/10-authoring-conventions.md`.
+5. Add and accept at least two ADRs before implementation begins.
+6. Reach Gate 2 before introducing product/application code.
 
 ## Completion Standard
 - The completed repository should answer product, scope, scenarios, domain, capabilities, contracts, architecture, quality, and operations questions from the repo alone.
@@ -23,4 +25,6 @@ A completed instance should let developers and LLMs collaborate to design a prod
 
 ## Repository Boundary
 - This repo contains only instance-owned design artifacts and collaboration surfaces.
+- `design/` is the design-first phase of the repo.
+- `implementation/` is where code begins after Gate 2 in the same repo.
 - External provenance details stay in `INSTANCE_METADATA.json`.

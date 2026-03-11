@@ -49,7 +49,7 @@ open_questions:
 - `Reconciliation`: operator-driven comparison of local request state against downstream fulfillment state.
 
 ## Inputs
-- Product goals and constraints from `docs/01-product-scope.md`.
+- Product goals and constraints from `design/01-product-scope.md`.
 - The need for auditability and fulfillment tracking.
 
 ## Outputs

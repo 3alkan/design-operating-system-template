@@ -44,7 +44,7 @@ open_questions:
 - `[TBD]`: `[TBD]`
 
 ## Inputs
-- Product scope and goals from `docs/01-product-scope.md`.
+- Product scope and goals from `design/01-product-scope.md`.
 - Domain knowledge from stakeholders or existing systems.
 
 ## Outputs

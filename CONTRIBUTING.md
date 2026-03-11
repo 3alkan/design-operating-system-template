@@ -17,7 +17,7 @@ Thanks for improving the DOS.
 - Placeholder tokens inside `dos/instance-seed/` may remain only where the seed authoring conventions allow them.
 
 ## Authoring Rules
-- Follow `dos/instance-seed/docs/10-authoring-conventions.md` when changing the packaged downstream seed.
+- Follow `dos/instance-seed/design/10-authoring-conventions.md` when changing the packaged downstream product repo.
 - Use fixed section headings and front matter keys.
 - Assign stable artifact IDs and maintain `related_ids`.
 - Use Mermaid-only diagrams in fenced ` ```mermaid ` blocks.

@@ -10,7 +10,7 @@
 - [ ] `CHANGELOG.md` has a dated DOS release section for that version.
 - [ ] `docs/DOS_MISSION.md` reflects the current DOS goal, boundary, and success criteria.
 - [ ] `README.md` reflects the DOS package boundary and instantiation model.
-- [ ] `AGENTS.md` and `dos/instance-seed/docs/10-authoring-conventions.md` are aligned.
+- [ ] `AGENTS.md` and `dos/instance-seed/design/10-authoring-conventions.md` are aligned.
 - [ ] The frozen package under `dos/` is internally consistent.
 - [ ] `dos/dos-manifest.json` matches the current `dos/` package, `hash_algorithm`, and package hash.
 - [ ] The reference example is complete and still serves as DOS teaching material.
@@ -22,6 +22,7 @@
 - A maintainer or downstream team should understand from `README.md` and `docs/DOS_MISSION.md` that this repo publishes the DOS rather than acting as a downstream product repo.
 - A newcomer should be able to follow `docs/INSTANCE_CREATION.md` without guessing what becomes a downstream instance.
 - A developer or LLM should be able to inspect `dos/patterns/` and `dos/reference/` to understand the DOS and the expected completion bar without mistaking them for default downstream product scope.
+- A downstream team should understand that `design/` is the source of truth and `implementation/` is the default code location after Gate 2.
 
 ## Release Discipline
 - Update `CHANGELOG.md` when the DOS structure, review model, or collaboration workflow change materially.

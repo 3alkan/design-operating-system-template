@@ -33,15 +33,15 @@ open_questions:
 - Done means:
   - [ ] Behavior satisfies linked scenarios.
   - [ ] Related contracts and components are defined.
-  - [ ] Related checks in `docs/07-quality.md` are identified.
+  - [ ] Related checks in `design/07-quality.md` are identified.
 
 ## Release Or Dependency Notes
 - Dependencies: `[TBD]`
 - Sequencing notes: `[TBD]`
 
 ## Inputs
-- Goals from `docs/01-product-scope.md`.
-- Scenarios from `docs/03-scenarios.md`.
+- Goals from `design/01-product-scope.md`.
+- Scenarios from `design/03-scenarios.md`.
 
 ## Outputs
 - A capability inventory that can be mapped to contracts, components, and review or verification checks.

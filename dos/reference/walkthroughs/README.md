@@ -6,4 +6,4 @@ This directory contains walkthrough material for understanding and using the can
 1. Read the root `README.md`.
 2. Read `docs/INSTANCE_CREATION.md`.
 3. Inspect `dos/instance-seed/` to see what a downstream instance receives.
-4. Compare that with `dos/reference/example-instance/` to understand the target quality bar.
+4. Compare that with `dos/reference/example-instance/` to understand the target quality bar and same-repo lifecycle.

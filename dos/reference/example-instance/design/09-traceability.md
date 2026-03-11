@@ -33,8 +33,8 @@ open_questions:
 - Any change to audit durability or notification projection must update `CAP-104`, `CMP-103`, `CMP-104`, `NFR-102`, and `ADR-0002`.
 
 ## Inputs
-- All product artifacts from `docs/01` through `docs/08`.
-- Accepted ADRs from `docs/adr/`.
+- All product artifacts from `design/01` through `design/08`.
+- Accepted ADRs from `design/adr/`.
 
 ## Outputs
 - A complete traceability map for the reference implementation.

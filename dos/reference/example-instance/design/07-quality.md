@@ -46,9 +46,9 @@ open_questions:
 - [x] Traceability rows exist for all active capabilities.
 
 ## Inputs
-- Capabilities from `docs/04-capabilities.md`.
-- Contracts and architecture from `docs/05-contracts.md` and `docs/06-architecture.md`.
-- Operational expectations from `docs/08-operations.md`.
+- Capabilities from `design/04-capabilities.md`.
+- Contracts and architecture from `design/05-contracts.md` and `design/06-architecture.md`.
+- Operational expectations from `design/08-operations.md`.
 
 ## Outputs
 - The quality bar, NFR set, and check inventory for implementation.

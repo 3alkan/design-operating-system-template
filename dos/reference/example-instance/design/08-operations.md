@@ -60,8 +60,8 @@ open_questions:
   - `Rebuild the projection from committed audit entries if the source ledger is intact.`
 
 ## Inputs
-- Architecture and risks from `docs/06-architecture.md`.
-- Quality checks from `docs/07-quality.md`.
+- Architecture and risks from `design/06-architecture.md`.
+- Quality checks from `design/07-quality.md`.
 
 ## Outputs
 - The release, rollback, observability, and troubleshooting model for the product.

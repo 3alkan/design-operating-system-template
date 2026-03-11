@@ -56,7 +56,7 @@ open_questions:
 - Out of scope for the initial completed design: billing, analytics warehouse export, mobile-native user experiences.
 
 ## Inputs
-- System purpose from `docs/00-system-purpose.md`.
+- System purpose from `design/00-system-purpose.md`.
 - Internal operations and compliance requirements.
 
 ## Outputs

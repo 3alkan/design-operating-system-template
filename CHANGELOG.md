@@ -6,7 +6,7 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 
 ## Downstream Project Changelog Placeholder
 - This repository is the canonical DOS repo, so it does not track downstream project change history.
-- Downstream project repos should set `INSTANCE_DESIGN_VERSION` in their own `VERSION` file and maintain their own changelog.
+- Downstream project repos should set `INSTANCE_DESIGN_VERSION` and `PRODUCT_VERSION` in their own `VERSION` file and maintain their own changelog.
 
 ## DOS Release History
 
@@ -19,6 +19,12 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 
 #### Fixed
 - [TBD]
+
+### [0.8.0] - 2026-03-11
+#### Changed
+- Restructured the packaged instance around `design/` plus `implementation/` to make same-repo implementation the default lifecycle after Gate 2.
+- Updated instance versioning to include both `INSTANCE_DESIGN_VERSION` and `PRODUCT_VERSION`.
+- Updated instantiation tooling to prefer `--design-version` and support optional `--product-version`.
 
 ### [0.7.0] - 2026-03-11
 #### Added

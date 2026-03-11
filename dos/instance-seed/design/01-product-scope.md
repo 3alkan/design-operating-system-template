@@ -51,7 +51,7 @@ open_questions:
 - Out of scope for the initial completed design: `[TBD]`
 
 ## Inputs
-- System purpose from `docs/00-system-purpose.md`.
+- System purpose from `design/00-system-purpose.md`.
 - Stakeholder goals, constraints, and target actors.
 
 ## Outputs

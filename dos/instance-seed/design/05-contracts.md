@@ -41,8 +41,8 @@ open_questions:
 - Audit or observability requirements: `[TBD]`
 
 ## Inputs
-- Capabilities from `docs/04-capabilities.md`.
-- Quality and operational constraints from `docs/07-quality.md` and `docs/08-operations.md`.
+- Capabilities from `design/04-capabilities.md`.
+- Quality and operational constraints from `design/07-quality.md` and `design/08-operations.md`.
 
 ## Outputs
 - Interface definitions that architecture and implementation can honor without stack lock-in.

@@ -31,8 +31,8 @@ open_questions:
 - A structural change is not review-ready until traceability is updated.
 
 ## Inputs
-- All artifacts from `docs/01` through `docs/08`.
-- Accepted ADRs from `docs/adr/`.
+- All artifacts from `design/01` through `design/08`.
+- Accepted ADRs from `design/adr/`.
 
 ## Outputs
 - A machine-checkable and review-friendly dependency map for the design.

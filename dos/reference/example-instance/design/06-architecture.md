@@ -128,9 +128,9 @@ sequenceDiagram
 | `RISK-102` | Approval policy changes after a request enters routing | Decisions become inconsistent or disputed | Snapshot policy at submission and retain it in the ledger |
 
 ## Inputs
-- Contracts from `docs/05-contracts.md`.
-- Scenarios from `docs/03-scenarios.md`.
-- Accepted ADRs from `docs/adr/`.
+- Contracts from `design/05-contracts.md`.
+- Scenarios from `design/03-scenarios.md`.
+- Accepted ADRs from `design/adr/`.
 
 ## Outputs
 - A complete stack-independent architecture and runtime view for implementation.

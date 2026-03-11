@@ -39,7 +39,7 @@ open_questions:
 - Include impacted artifact IDs.
 - Include at least two alternatives.
 - Record rejected options and consequences.
-- Link the ADR in `docs/09-traceability.md`.
+- Link the ADR in `design/09-traceability.md`.
 
 ## Inputs
 - Architecture, contracts, quality, and operations artifacts.

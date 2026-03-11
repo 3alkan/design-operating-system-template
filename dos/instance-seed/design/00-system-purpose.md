@@ -44,7 +44,7 @@ open_questions:
 ## Inputs
 - Repository mission and intended users.
 - Instance governance rules from `AGENTS.md`.
-- Authoring conventions from `docs/10-authoring-conventions.md`.
+- Authoring conventions from `design/10-authoring-conventions.md`.
 
 ## Outputs
 - The governing purpose for this project.

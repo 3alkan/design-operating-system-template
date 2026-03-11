@@ -35,7 +35,7 @@ open_questions:
 - Done means:
   - [x] Behavior satisfies `SCN-101`.
   - [x] Related contracts and components are defined.
-  - [x] Related checks in `docs/07-quality.md` are identified.
+  - [x] Related checks in `design/07-quality.md` are identified.
 
 ### Capability: `CAP-102` Route and record approvals
 - Acceptance criteria:
@@ -44,7 +44,7 @@ open_questions:
 - Done means:
   - [x] Behavior satisfies `SCN-102`.
   - [x] Related contracts and components are defined.
-  - [x] Related checks in `docs/07-quality.md` are identified.
+  - [x] Related checks in `design/07-quality.md` are identified.
 
 ### Capability: `CAP-103` Issue and reconcile fulfillment tasks
 - Acceptance criteria:
@@ -53,7 +53,7 @@ open_questions:
 - Done means:
   - [x] Behavior satisfies `SCN-103`.
   - [x] Related contracts and components are defined.
-  - [x] Related checks in `docs/07-quality.md` are identified.
+  - [x] Related checks in `design/07-quality.md` are identified.
 
 ### Capability: `CAP-104` Notify actors and preserve audit history
 - Acceptance criteria:
@@ -69,8 +69,8 @@ open_questions:
 - Sequencing notes: `CAP-101` and `CAP-102` must exist before `CAP-103`; `CAP-104` can be implemented incrementally but must preserve audit history from day one.
 
 ## Inputs
-- Product goals from `docs/01-product-scope.md`.
-- Runtime journeys from `docs/03-scenarios.md`.
+- Product goals from `design/01-product-scope.md`.
+- Runtime journeys from `design/03-scenarios.md`.
 
 ## Outputs
 - The capability set that drives contracts, components, traceability, and verification.

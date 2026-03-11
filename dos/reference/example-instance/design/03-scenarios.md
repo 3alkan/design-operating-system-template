@@ -67,8 +67,8 @@ open_questions:
 - `SCN-103` is operator-driven and may call the integration boundary repeatedly until state converges.
 
 ## Inputs
-- Actors and goals from `docs/01-product-scope.md`.
-- Domain concepts and invariants from `docs/02-domain-model.md`.
+- Actors and goals from `design/01-product-scope.md`.
+- Domain concepts and invariants from `design/02-domain-model.md`.
 
 ## Outputs
 - The core runtime journeys used to define capabilities, contracts, architecture views, and verification checks.

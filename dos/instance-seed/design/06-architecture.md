@@ -80,9 +80,9 @@ sequenceDiagram
 | `RISK-002` | `[TBD]` | `[TBD]` | `[TBD]` |
 
 ## Inputs
-- Contracts from `docs/05-contracts.md`.
-- Runtime scenarios from `docs/03-scenarios.md`.
-- Relevant ADRs from `docs/adr/`.
+- Contracts from `design/05-contracts.md`.
+- Runtime scenarios from `design/03-scenarios.md`.
+- Relevant ADRs from `design/adr/`.
 
 ## Outputs
 - A stack-independent structural design for implementation.
