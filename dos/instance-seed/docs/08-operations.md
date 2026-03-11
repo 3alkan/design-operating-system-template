@@ -1,7 +1,7 @@
 ---
 artifact_type: operations
 artifact_id: OPS-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - NFR-001
@@ -10,7 +10,7 @@ related_ids:
 assumptions:
   - "[ASSUMPTION] Operational expectations can be described before deployment technology is fixed."
 open_questions:
-  - "[OPEN QUESTION] Which downstream products need explicit on-call ownership models."
+  - "[OPEN QUESTION] Whether this product needs an explicit on-call ownership model."
 ---
 
 # 08 - Operations
@@ -56,7 +56,7 @@ open_questions:
 - Completed instances should define observable signals for core scenarios and failure paths.
 
 ## Open Questions
-- Which environments or release stages are required for the downstream product.
+- Which environments or release stages are required for this product.
 
 ## Related IDs
 - `OPS-001`

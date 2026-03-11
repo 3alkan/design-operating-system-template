@@ -1,7 +1,7 @@
 ---
 artifact_type: contracts
 artifact_id: CNT-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CAP-001
@@ -25,7 +25,7 @@ open_questions:
 | `CNT-002` | Query | `[TBD]` | `CMP-002` | `CMP-001` |
 | `CNT-003` | Event | `[TBD]` | `CMP-002` | `CMP-003` |
 
-## Contract Seed
+## Contract Structure
 ### Contract: `CNT-001` `[TBD]`
 - Intent: `[TBD]`
 - Trigger: `[TBD]`
@@ -51,7 +51,7 @@ open_questions:
 - Abstract commands, queries, and events are enough to express the important runtime interactions.
 
 ## Open Questions
-- Whether downstream projects need a separate schema appendix for payload field definitions.
+- Whether a separate schema appendix is needed for payload field definitions.
 
 ## Related IDs
 - `CAP-001`

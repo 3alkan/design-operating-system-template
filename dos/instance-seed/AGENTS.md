@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository is a downstream product-design instance created from the canonical Design Operating System package. Materialized root artifacts are the source of truth between architect, Codex, developers, and downstream LLMs.
+This repository is a product-design instance. Root artifacts are the source of truth between architect, Codex, developers, and collaborating LLMs.
 
 ## Source of Truth (Instance Artifact Spine)
 - `docs/00-system-purpose.md`: product mission, usage modes, completion standard.
@@ -15,7 +15,7 @@ This repository is a downstream product-design instance created from the canonic
 - `docs/09-traceability.md`: mappings across goals, scenarios, capabilities, contracts, components, ADRs, and checks.
 - `docs/10-authoring-conventions.md`: required schema, statuses, IDs, placeholder policy, and update rules.
 - `docs/adr/`: project-specific architecture decision records.
-- `INSTANCE_METADATA.json`: lineage data for the source DOS release and package hash.
+- `INSTANCE_METADATA.json`: origin metadata for this instance.
 
 If code and artifacts conflict, artifacts win until updated.
 

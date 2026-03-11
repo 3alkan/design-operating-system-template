@@ -1,7 +1,7 @@
 ---
 artifact_type: traceability
 artifact_id: CHK-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - GOAL-001

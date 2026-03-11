@@ -1,10 +1,10 @@
 # [PROJECT_NAME]
 
-This repository is a downstream product-design instance materialized from the canonical Design Operating System package.
+This repository is a product-design instance.
 
 ## What This Instance Owns
 - The root of this repo belongs to the product design instance.
-- `INSTANCE_METADATA.json` records which DOS release and package hash this instance came from.
+- `INSTANCE_METADATA.json` records origin metadata for this instance.
 - `VERSION` records the instance design version.
 - `docs/` contains the instance artifact spine and is the design source of truth.
 
@@ -15,6 +15,6 @@ This repository is a downstream product-design instance materialized from the ca
 4. Add and accept at least two ADRs before implementation begins.
 5. Reach Gate 2 before introducing product/application code.
 
-## DOS Reference Boundary
-- DOS teaching material is not copied into this repo by default.
-- If you need patterns or the bundled example, consult the source DOS release recorded in `INSTANCE_METADATA.json`.
+## Repository Boundary
+- This repo contains only instance-owned design artifacts and collaboration surfaces.
+- External provenance details stay in `INSTANCE_METADATA.json`.

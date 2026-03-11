@@ -1,7 +1,7 @@
 ---
 artifact_type: domain-model
 artifact_id: DOM-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - INV-001
@@ -55,7 +55,7 @@ open_questions:
 - Concepts can be described without binding them to storage or transport structures.
 
 ## Open Questions
-- Whether downstream projects need formal state diagrams in addition to lifecycle notes.
+- Whether formal state diagrams are needed in addition to lifecycle notes.
 
 ## Related IDs
 - `DOM-001`

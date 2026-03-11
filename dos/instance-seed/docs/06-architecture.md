@@ -1,7 +1,7 @@
 ---
 artifact_type: architecture
 artifact_id: CMP-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CNT-001

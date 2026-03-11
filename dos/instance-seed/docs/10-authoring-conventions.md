@@ -6,15 +6,15 @@ owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - SYS-001
 assumptions:
-  - "[ASSUMPTION] Downstream projects may choose any implementation stack."
+  - "[ASSUMPTION] The project may choose any implementation stack."
 open_questions:
-  - "[OPEN QUESTION] Whether downstream teams add extra artifact types beyond the core set."
+  - "[OPEN QUESTION] Whether the team will add extra artifact types beyond the core set."
 ---
 
 # 10 - Authoring Conventions
 
 ## Purpose
-- Define the required structure that makes the seed readable by humans and safe for LLM-assisted updates.
+- Define the required structure that makes this repository readable by humans and safe for LLM-assisted updates.
 - Standardize IDs, statuses, placeholders, and cross-artifact references.
 
 ## Required Front Matter
@@ -39,8 +39,8 @@ Core spine documents must preserve their titled sections exactly. Each document 
 Artifact-specific sections may add more detail, but the required sections must remain present.
 
 ## Artifact ID Scheme
-- `SPEC-###`: seed or project authoring conventions
-- `SYS-###`: system purpose or seed-level statements
+- `SPEC-###`: project authoring conventions
+- `SYS-###`: system-purpose statements
 - `ACT-###`: actor definitions
 - `GOAL-###`: goals and success criteria
 - `CON-###`: constraints
@@ -61,7 +61,6 @@ IDs must be unique within a completed project instance.
 
 ## Status Values
 Allowed statuses:
-- `seed`
 - `draft`
 - `candidate`
 - `accepted`
@@ -70,10 +69,9 @@ Allowed statuses:
 - `superseded`
 
 Use:
-- `seed` for reusable skeletons.
-- `draft` or `candidate` for work in progress.
+- `draft` or `candidate` for early work and in-progress artifacts.
 - `accepted` for locked design decisions and completed artifacts.
-- `active` for stable seed rules or operationally active items.
+- `active` for stable rules or operationally active items.
 
 ## Placeholder Policy
 Allowed placeholder tokens:
@@ -86,7 +84,7 @@ Allowed placeholder tokens:
 - `[OPEN QUESTION]`
 
 Rules:
-- A freshly materialized instance may keep placeholders while the design is still incomplete.
+- A newly created instance may keep placeholders while the design is still incomplete.
 - Active project instances should resolve project placeholders and critical design placeholders before Gate 2.
 - Placeholder text must never replace an artifact ID.
 
@@ -119,7 +117,7 @@ Rules:
 - A consistent review contract for this instance.
 
 ## Assumptions
-- Downstream implementers may choose different stacks while honoring the same abstract design.
+- Implementers may choose different stacks while honoring the same abstract design.
 
 ## Open Questions
 - Whether future versions should split traceability into multiple files for very large systems.

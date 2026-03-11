@@ -1,7 +1,7 @@
 ---
 artifact_type: adr
 artifact_id: ADR-0000
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CMP-001

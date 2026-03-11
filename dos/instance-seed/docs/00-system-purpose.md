@@ -1,13 +1,13 @@
 ---
 artifact_type: system-purpose
 artifact_id: SYS-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - GOAL-001
   - CHK-001
 assumptions:
-  - "[ASSUMPTION] The downstream team wants a stack-independent but implementation-ready design package."
+  - "[ASSUMPTION] The team wants a stack-independent but implementation-ready design package."
 open_questions:
   - "[OPEN QUESTION] Whether the completed instance will serve humans only or humans and LLMs."
 ---
@@ -26,7 +26,7 @@ open_questions:
 ## Usage Modes
 | State | Description | Expected Status |
 |---|---|---|
-| Seed | Freshly materialized instance with unresolved project placeholders | `seed` or `draft` |
+| Initial instance | Fresh repository state with unresolved project placeholders | `draft` |
 | Active instance | Project-specific design package moving toward Gate 2 | `candidate` or `accepted` |
 
 ## Design Principles
@@ -47,14 +47,14 @@ open_questions:
 - Authoring conventions from `docs/10-authoring-conventions.md`.
 
 ## Outputs
-- The governing purpose for the seed or downstream project.
+- The governing purpose for this project.
 - The standard used to judge whether a design is implementation-ready.
 
 ## Assumptions
 - The final implementation stack is intentionally left open during design.
 
 ## Open Questions
-- Which downstream teams or agents are expected to consume the completed design package first.
+- Which teams or agents are expected to consume the completed design package first.
 
 ## Related IDs
 - `SYS-001`

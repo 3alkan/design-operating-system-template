@@ -1,7 +1,7 @@
 ---
 artifact_type: quality
 artifact_id: NFR-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - CAP-001
@@ -10,7 +10,7 @@ related_ids:
 assumptions:
   - "[ASSUMPTION] Verification expectations can be defined without selecting test tools."
 open_questions:
-  - "[OPEN QUESTION] Which non-functional requirements are mandatory for every downstream product."
+  - "[OPEN QUESTION] Which non-functional requirements are mandatory for this product."
 ---
 
 # 07 - Quality
@@ -53,10 +53,10 @@ open_questions:
 - Check IDs that support traceability and implementation handoff.
 
 ## Assumptions
-- Downstream teams can translate abstract checks into stack-specific test suites during implementation.
+- The team can translate abstract checks into stack-specific test suites during implementation.
 
 ## Open Questions
-- Whether the DOS should prescribe severity levels for NFR failures.
+- Whether this project should define severity levels for NFR failures.
 
 ## Related IDs
 - `NFR-001`

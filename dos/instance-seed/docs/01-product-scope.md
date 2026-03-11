@@ -1,7 +1,7 @@
 ---
 artifact_type: product-scope
 artifact_id: GOAL-001
-status: seed
+status: draft
 owner: "[PROJECT_CONTACT_EMAIL]"
 related_ids:
   - ACT-001
@@ -9,7 +9,7 @@ related_ids:
   - SCN-001
   - CAP-001
 assumptions:
-  - "[ASSUMPTION] Downstream projects can name multiple actors and primary success metrics."
+  - "[ASSUMPTION] The project can name multiple actors and primary success metrics."
 open_questions:
   - "[OPEN QUESTION] Which actor is primary for the first release."
 ---
@@ -59,7 +59,7 @@ open_questions:
 - The actor and goal set used by scenarios and capabilities.
 
 ## Assumptions
-- The downstream team can identify explicit success signals for each primary goal.
+- The project team can identify explicit success signals for each primary goal.
 
 ## Open Questions
 - Which non-goals are temporary and which are permanent boundaries.

@@ -35,7 +35,7 @@ open_questions:
 5. `deprecated`
 
 ## Authoring Rules
-- Use `0000-seed.md`.
+- Use `0000-record.md`.
 - Include impacted artifact IDs.
 - Include at least two alternatives.
 - Record rejected options and consequences.
@@ -45,7 +45,7 @@ open_questions:
 - Architecture, contracts, quality, and operations artifacts.
 
 ## Outputs
-- Durable design decisions that remove ambiguity for downstream implementation.
+- Durable design decisions that remove ambiguity during implementation.
 
 ## Assumptions
 - Most completed instances should have at least two accepted ADRs.
