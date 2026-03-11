@@ -43,7 +43,7 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 
 ## Review Model
 - Review the repo shell when changing DOS publishing, onboarding, or contributor workflow.
-- Review `dos/instance-seed/` when changing the downstream instance contract.
+- Review `dos/instance-seed/` when changing the packaged downstream seed.
 - Review `dos/patterns/` and `dos/reference/` when changing teaching/reference material.
 - Review `dos/dos-manifest.json` whenever the frozen DOS package changes.
 

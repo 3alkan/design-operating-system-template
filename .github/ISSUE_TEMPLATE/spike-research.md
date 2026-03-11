@@ -25,4 +25,4 @@ assignees: []
 - [ ] Follow-up ADR need is stated.
 
 ## Guardrail
-- [ ] Spike output respects the current gate model and does not introduce product/application code before Gate 2.
+- [ ] Spike output stays within DOS package, guidance, reference, or tooling scope.

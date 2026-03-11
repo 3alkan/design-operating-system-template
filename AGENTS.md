@@ -21,18 +21,12 @@ If repo shell docs and `dos/` conflict, `dos/` wins until updated.
 - Gate 1 (Package Coherent)
   - `dos/instance-seed/`, `dos/patterns/`, and `dos/reference/` match the intended DOS release.
   - `dos/dos-manifest.json` matches the frozen package contents.
-- Gate 2 (Downstream Instance Ready For Implementation)
-  - A materialized downstream instance based on `dos/instance-seed/` has project-specific artifacts `01` through `09`.
-  - At least two ADRs are accepted in the downstream instance.
-  - Contracts, runtime scenarios, quality expectations, and operational model are specified abstractly.
-  - Traceability links goals, scenarios, capabilities, contracts, components, and checks.
-  - Manual review confirms no critical placeholders remain in the downstream instance.
-- Gate 3 (DOS Release Ready)
+- Gate 2 (DOS Release Ready)
   - Repo shell docs and contributor surfaces reflect the current DOS package.
   - `VERSION`, `CHANGELOG.md`, and `dos/dos-manifest.json` are aligned.
   - Review evidence and any configured CI checks pass.
 
-No product/application code is allowed inside downstream instances before Gate 2. This DOS repo itself should remain package, guidance, and tooling oriented.
+Downstream implementation-readiness gates belong to `dos/instance-seed/AGENTS.md`. This DOS repo itself should remain package, guidance, and tooling oriented.
 
 ## Artifacts Are The Contract
 - Any change to downstream design structure must update the relevant files under `dos/instance-seed/`.
