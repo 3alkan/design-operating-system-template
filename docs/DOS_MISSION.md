@@ -15,6 +15,7 @@
 - An instance repository is created from `dos/instance-seed/`.
 - That instance becomes the working space where developers and LLMs collaborate to design and implement a specific product end to end.
 - The instance is not only a design package; it is the default long-lived repo for the product, beginning in `design/` and continuing into `implementation/` after Gate 2.
+- The instance should also preserve its own design and implementation history through an instance-owned changelog.
 
 ## Product Standard For An Instance
 - A completed instance must let a capable developer or LLM read the repository and understand:

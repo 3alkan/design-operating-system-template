@@ -7,6 +7,7 @@ This repository is the canonical Design Operating System (DOS) repo. It is not a
 - `docs/DOS_MISSION.md`: canonical DOS goal, boundary, and success criteria.
 - `dos/instance-seed/design/00-system-purpose.md` through `dos/instance-seed/design/10-authoring-conventions.md`: the downstream instance artifact contract.
 - `dos/instance-seed/design/07-quality.md`: the downstream implementation-readiness contract for the packaged product repo.
+- `dos/instance-seed/CHANGELOG.md`: the downstream product history surface for design and implementation changes.
 - `dos/instance-seed/design/adr/`: ADR starters and ADR guidance that ship with downstream instances.
 - `dos/patterns/`: frozen DOS reference patterns.
 - `dos/reference/`: frozen DOS teaching material, including the example instance.

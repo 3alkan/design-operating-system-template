@@ -17,6 +17,7 @@ The purpose of this repository is to define one product end to end in a stack-in
 - `design/09-traceability.md`: mappings across goals, scenarios, capabilities, contracts, components, ADRs, and checks.
 - `design/10-authoring-conventions.md`: required schema, statuses, IDs, placeholder policy, and update rules.
 - `design/adr/`: project-specific architecture decision records.
+- `CHANGELOG.md`: product history for design and implementation changes.
 - `INSTANCE_METADATA.json`: origin metadata for this instance.
 - `implementation/`: default location for product code after Gate 2.
 
@@ -45,4 +46,5 @@ No product/application code is allowed before Gate 2. Gate 2 means this repo is 
 - Fixed structural decisions must be recorded in `design/adr/`.
 - Structural code changes after Gate 2 must keep `design/` aligned with `implementation/`.
 - If implementation-readiness expectations change, update `design/07-quality.md` and any impacted artifacts.
+- Significant design or implementation milestones should be reflected in `CHANGELOG.md`.
 - PRs that change structure without matching artifact updates are not review-ready.

@@ -12,6 +12,7 @@ Thanks for improving this product instance.
 - Product/application code is allowed after Gate 2.
 - `design/` remains the source of truth, and structural code changes in `implementation/` must update the relevant artifacts and traceability rules together.
 - `design/07-quality.md` defines the implementation-readiness bar and should be updated if the handoff standard changes.
+- Significant design and implementation changes should update `CHANGELOG.md`.
 - Placeholder tokens such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, `INSTANCE_DESIGN_VERSION`, `PRODUCT_VERSION`, `[TBD]`, `[ASSUMPTION]`, and `[OPEN QUESTION]` may remain only where the authoring conventions allow them.
 
 ## Authoring Rules

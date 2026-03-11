@@ -20,6 +20,14 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 #### Fixed
 - [TBD]
 
+### [0.10.0] - 2026-03-12
+#### Added
+- Added a packaged root `CHANGELOG.md` to downstream instances so one product repo can track both design and implementation history.
+- Added a mirrored root changelog to the bundled reference example.
+
+#### Changed
+- Updated DOS mission, onboarding, and packaged instance guidance to treat the instance changelog as an instance-owned product surface.
+
 ### [0.9.0] - 2026-03-11
 #### Changed
 - Hardened the packaged instance so Gate 2 now reads as the point where implementation can credibly begin in the same repo, not just where coding becomes allowed.

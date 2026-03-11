@@ -2,7 +2,7 @@
 
 Tech-stack-independent Design Operating System (DOS) for producing product repositories that begin design-first and become implementation-ready in the same repo.
 
-Current DOS version: `0.9.0`
+Current DOS version: `0.10.0`
 
 ## What This Repo Owns
 - The canonical DOS source.
@@ -54,7 +54,7 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 - Root `VERSION` contains only `DOS_VERSION`.
 - `dos/dos-manifest.json` repeats DOS version metadata and records the `SHA3-256` package hash and file inventory for the frozen `dos/` package.
 - `python scripts/build_dos_manifest.py` is the canonical way to refresh the manifest before release or instantiation.
-- Downstream instances own their own `VERSION` and `INSTANCE_METADATA.json`.
+- Downstream instances own their own `VERSION`, `CHANGELOG.md`, and `INSTANCE_METADATA.json`.
 
 ## Review Model
 - Review the repo shell when changing mission, DOS publishing, onboarding, or contributor workflow.

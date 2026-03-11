@@ -38,7 +38,7 @@ Optional instantiation inputs:
 
 ## Downstream Instance Ownership
 - After materialization, the downstream repo root belongs to the instance.
-- The instance keeps its own `VERSION`, `INSTANCE_METADATA.json`, `README.md`, `AGENTS.md`, `.github/`, `design/`, and `implementation/`.
+- The instance keeps its own `VERSION`, `CHANGELOG.md`, `INSTANCE_METADATA.json`, `README.md`, `AGENTS.md`, `.github/`, `design/`, and `implementation/`.
 - The instance should not carry DOS publishing guides or DOS teaching material unless explicitly copied later.
 - The instance is the actual product-design repository that should enable human and LLM collaboration toward implementation.
 
