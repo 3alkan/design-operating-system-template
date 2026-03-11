@@ -20,6 +20,13 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 #### Fixed
 - [TBD]
 
+### [0.9.0] - 2026-03-11
+#### Changed
+- Hardened the packaged instance so Gate 2 now reads as the point where implementation can credibly begin in the same repo, not just where coding becomes allowed.
+- Strengthened `dos/instance-seed/design/07-quality.md` into the primary implementation-readiness and LLM-handoff contract for downstream instances.
+- Updated the packaged instance entry docs, contribution guidance, and issue/PR forms to point at the stronger readiness bar and same-repo lifecycle.
+- Aligned the DOS mission, onboarding guidance, and reference example with the stronger instance product standard.
+
 ### [0.8.0] - 2026-03-11
 #### Changed
 - Restructured the packaged instance around `design/` plus `implementation/` to make same-repo implementation the default lifecycle after Gate 2.

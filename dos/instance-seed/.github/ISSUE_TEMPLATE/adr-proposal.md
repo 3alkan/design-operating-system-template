@@ -23,3 +23,6 @@ assignees: []
 ## Alternatives Considered
 1. [TBD]
 2. [TBD]
+
+## Implementation Readiness Impact
+- Impact on Gate 2 or handoff quality: [TBD]

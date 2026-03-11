@@ -87,6 +87,7 @@ Allowed placeholder tokens:
 Rules:
 - A newly created instance may keep placeholders while the design is still incomplete.
 - Active project instances should resolve project placeholders and critical design placeholders before Gate 2.
+- Placeholders may remain only if they do not force an implementer to invent missing core design during handoff.
 - Placeholder text must never replace an artifact ID.
 
 ## Traceability Rules
@@ -103,10 +104,11 @@ Rules:
 - Keep scenarios concrete, including preconditions, main flow, alternate flow, and failure behavior.
 - Keep contracts abstract: define intent, inputs, outputs, errors, and guarantees without binding to a transport or stack unless an ADR fixes it.
 - Record open design gaps explicitly rather than hiding them in prose.
+- Write at the level of implementation-safe abstraction: leave stack choice open, but do not leave core behavior, boundaries, contracts, or operating expectations undefined.
 
 ## Review Contract
 - Review this instance for artifact consistency before claiming Gate 2 readiness.
-- Review covers file presence, headings, front matter keys, ID consistency, cross-reference integrity, ADR minimums, traceability coverage, and placeholder policy.
+- Review covers file presence, headings, front matter keys, ID consistency, cross-reference integrity, ADR minimums, traceability coverage, placeholder policy, and whether the repo can be implemented without inventing missing core design.
 
 ## Inputs
 - Instance artifact definitions.

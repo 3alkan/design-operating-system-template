@@ -21,6 +21,10 @@ assignees: []
 - Files or directories: [TBD]
 - Artifact IDs or checks: [TBD]
 
+## Readiness Impact
+- Does this defect weaken implementation readiness or Gate 2 confidence: [Yes/No] ([TBD])
+- Is `design/07-quality.md` or traceability likely affected: [Yes/No] ([TBD])
+
 ## Evidence
 - Review steps or evidence used: [TBD]
 - Additional context: [TBD]

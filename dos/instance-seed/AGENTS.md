@@ -1,8 +1,8 @@
 # AGENTS.md
 
-This repository is a product-design instance. Root artifacts are the source of truth between architect, Codex, developers, and collaborating LLMs.
+This repository is a product instance. Root artifacts are the source of truth between architect, Codex, developers, and collaborating LLMs.
 
-The purpose of this repository is to define one product end to end in a stack-independent but implementation-ready form.
+The purpose of this repository is to define one product end to end in a stack-independent but implementation-ready form, then carry that same product into implementation in this repo.
 
 ## Source of Truth (Instance Artifact Spine)
 - `design/00-system-purpose.md`: product mission, usage modes, completion standard.
@@ -12,7 +12,7 @@ The purpose of this repository is to define one product end to end in a stack-in
 - `design/04-capabilities.md`: capability catalog with acceptance criteria.
 - `design/05-contracts.md`: abstract commands, queries, events, payload semantics, error rules.
 - `design/06-architecture.md`: components, boundaries, runtime views, deployment shape, cross-cutting concepts.
-- `design/07-quality.md`: definition of done, verification strategy, review checklist.
+- `design/07-quality.md`: implementation-readiness contract, definition of done, verification strategy, review checklist.
 - `design/08-operations.md`: release, rollback, observability, troubleshooting, operating model.
 - `design/09-traceability.md`: mappings across goals, scenarios, capabilities, contracts, components, ADRs, and checks.
 - `design/10-authoring-conventions.md`: required schema, statuses, IDs, placeholder policy, and update rules.
@@ -32,15 +32,17 @@ If code and artifacts conflict, artifacts win until updated.
   - Contracts, runtime scenarios, quality expectations, and operational model are specified abstractly.
   - Traceability links goals, scenarios, capabilities, contracts, components, and checks.
   - Manual review confirms no critical placeholders remain in the instance.
+  - `design/07-quality.md` supports a credible handoff to humans and LLMs without forcing invention of missing core design.
 - Gate 3 (Ready To Merge Structural Changes)
   - Definition of Done in `design/07-quality.md` is satisfied.
   - PR form is fully completed.
   - Review evidence and any configured CI checks pass.
 
-No product/application code is allowed before Gate 2. After Gate 2, product code belongs in `implementation/` by default.
+No product/application code is allowed before Gate 2. Gate 2 means this repo is ready to begin implementation in `implementation/`. After Gate 2, product code belongs in `implementation/` by default.
 
 ## Artifacts Are The Contract
 - Any change to product scope, behavior, domain, interfaces, components, runtime behavior, deployment shape, or cross-cutting policy must update the relevant artifacts and `design/09-traceability.md`.
 - Fixed structural decisions must be recorded in `design/adr/`.
 - Structural code changes after Gate 2 must keep `design/` aligned with `implementation/`.
+- If implementation-readiness expectations change, update `design/07-quality.md` and any impacted artifacts.
 - PRs that change structure without matching artifact updates are not review-ready.

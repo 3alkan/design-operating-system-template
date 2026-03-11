@@ -26,8 +26,8 @@ The DOS repo is the source and packaging surface for the system. The actual work
 2. Review `dos/dos-manifest.json`, `dos/patterns/`, and `dos/reference/` to understand the package quality bar.
 3. Run `python scripts/instantiate_dos.py --target <path> --instance-name <name> --design-version <x.y.z>`.
 4. Open the generated downstream repo and replace remaining placeholders such as `[PROJECT_DESCRIPTION]` and `[PROJECT_CONTACT_EMAIL]`.
-5. Fill the artifact spine in the materialized `design/` directory.
-6. After Gate 2, add product code under `implementation/`.
+5. Fill the artifact spine in the materialized `design/` directory and use `design/07-quality.md` as the governing readiness bar.
+6. After Gate 2, add product code under `implementation/` in the same repo.
 
 Optional instantiation inputs:
 - `--project-description` to prefill `[PROJECT_DESCRIPTION]`.
@@ -47,4 +47,5 @@ Optional instantiation inputs:
 - [ ] Traceability links goals, scenarios, capabilities, contracts, components, checks, and ADRs.
 - [ ] At least two ADRs are accepted.
 - [ ] No critical placeholders remain.
+- [ ] `design/07-quality.md` supports a credible implementation handoff to humans and LLMs without forcing invention of missing core design.
 - [ ] Manual artifact-consistency review passes.

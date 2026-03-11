@@ -15,3 +15,4 @@ This directory is the default home for product code after Gate 2.
 ## Guardrails
 - Do not introduce product/application code here before Gate 2.
 - Structural code changes here must update the relevant files in `design/`.
+- `design/07-quality.md` remains the governing readiness and handoff contract while code evolves here.

@@ -1,11 +1,12 @@
 # AGENTS.md
 
-This repository is the canonical Design Operating System (DOS) repo. It is not a downstream product-design instance. The frozen DOS package under `dos/` is the source of truth for the DOS itself.
+This repository is the canonical Design Operating System (DOS) repo. It is not a downstream product instance. The frozen DOS package under `dos/` is the source of truth for the DOS itself.
 
 ## Source Of Truth (DOS Repo)
 
 - `docs/DOS_MISSION.md`: canonical DOS goal, boundary, and success criteria.
 - `dos/instance-seed/design/00-system-purpose.md` through `dos/instance-seed/design/10-authoring-conventions.md`: the downstream instance artifact contract.
+- `dos/instance-seed/design/07-quality.md`: the downstream implementation-readiness contract for the packaged product repo.
 - `dos/instance-seed/design/adr/`: ADR starters and ADR guidance that ship with downstream instances.
 - `dos/patterns/`: frozen DOS reference patterns.
 - `dos/reference/`: frozen DOS teaching material, including the example instance.
@@ -17,6 +18,7 @@ If repo shell docs and `dos/` conflict, `dos/` wins until updated.
 - Root repo files such as `README.md`, `AGENTS.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `VERSION`, `docs/`, `.github/`, and `scripts/` are DOS-repo-owned surfaces.
 - `dos/instance-seed/` is the packaged downstream product repo seed, not the active root of this repo.
 - In a downstream instance created from this DOS, the materialized root artifacts become that project’s source of truth.
+- A downstream instance is the actual product repo this DOS is intended to produce.
 
 ## DOS Package Gates
 - Gate 1 (Package Coherent)
@@ -33,6 +35,7 @@ Downstream implementation-readiness gates belong to `dos/instance-seed/AGENTS.md
 ## Artifacts Are The Contract
 - Any change to downstream design structure must update the relevant files under `dos/instance-seed/`.
 - Any change to the default design-to-implementation lifecycle must update the relevant packaged instance files under `dos/instance-seed/`.
+- Any change to the downstream implementation-readiness standard must update `dos/instance-seed/design/07-quality.md` and the packaged instance entry surfaces that point to it.
 - Any change to DOS goals, boundary, or success criteria must update `docs/DOS_MISSION.md` and any affected root-level DOS files.
 - Any change to DOS repo shell behavior, publishing flow, or contributor workflow must update the relevant root-level DOS files.
 - Any change to DOS teaching/reference material must update the relevant files under `dos/patterns/` or `dos/reference/`.

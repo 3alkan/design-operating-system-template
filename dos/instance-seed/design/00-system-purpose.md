@@ -21,13 +21,14 @@ open_questions:
 ## System Mission
 - Product or system name: `[PROJECT_NAME]`
 - One-paragraph mission: `[PROJECT_DESCRIPTION]`
-- Completion standard: a completed instance lets a capable developer or LLM implement the product end to end in a chosen stack with minimal guessing.
+- Completion standard: a completed instance lets a capable developer or LLM implement the product end to end in this repo, in a chosen stack, with minimal guessing.
 
 ## Usage Modes
 | State | Description | Expected Status |
 |---|---|---|
 | Initial instance | Fresh repository state with unresolved project placeholders | `draft` |
 | Active instance | Project-specific design package moving toward Gate 2 | `candidate` or `accepted` |
+| Implementation-active instance | Same repo after Gate 2, with `design/` governing code in `implementation/` | `accepted` or `active` |
 
 ## Design Principles
 - Stay stack-independent unless an ADR intentionally fixes a technology choice.
@@ -39,6 +40,7 @@ open_questions:
 - Goals, scenarios, capabilities, contracts, architecture, quality, and operations are defined.
 - Structural decisions are captured in ADRs.
 - Traceability links all critical design artifacts.
+- `design/07-quality.md` defines a credible implementation handoff for humans and LLMs.
 - Manual artifact-consistency review passes with no critical placeholders.
 
 ## Inputs

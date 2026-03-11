@@ -27,10 +27,12 @@
 ## Review Evidence
 - Review steps used:
 - Additional checks:
+- Readiness impact:
 
 ## Guardrails
 - [ ] This PR respects the current gate model.
 - [ ] If product/application code changed after Gate 2, related structural artifacts in `design/` were updated.
+- [ ] If implementation-readiness expectations changed, `design/07-quality.md` was updated.
 - [ ] Structural changes update traceability and ADRs where required.
 - [ ] Any diagrams are Mermaid-only and embedded in Markdown.
 - [ ] Any new artifact IDs are unique and follow the conventions.

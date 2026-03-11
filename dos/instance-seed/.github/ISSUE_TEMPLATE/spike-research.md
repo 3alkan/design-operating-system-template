@@ -17,6 +17,7 @@ assignees: []
 - Artifact files to update: [TBD]
 - Artifact IDs to clarify: [TBD]
 - Decision recommendation needed: [TBD]
+- Impact on `design/07-quality.md` or implementation handoff: [TBD]
 
 ## Guardrail
 - [ ] Spike output respects the current gate model and does not introduce product/application code before Gate 2.

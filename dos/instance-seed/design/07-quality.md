@@ -18,12 +18,22 @@ open_questions:
 ## Purpose
 - Define the quality bar, review checks, and verification strategy that make a design implementation-ready.
 
+## Implementation-Readiness Contract
+- This file is the governing readiness bar for Gate 2.
+- Gate 2 is reached only when the repository can move into `implementation/` without inventing missing core design.
+- Reviewers should be able to answer yes to this question: can a capable developer or LLM implement the in-scope product from this repo without guessing core behavior, boundaries, contracts, or operating expectations?
+
 ## Definition Of Done
-- [ ] Linked capability acceptance criteria are satisfied.
-- [ ] Contracts and runtime paths are fully specified for in-scope scenarios.
-- [ ] Quality checks are mapped to capabilities and NFRs.
-- [ ] Operational readiness is defined for release, rollback, and troubleshooting.
-- [ ] Traceability is current.
+- [ ] Linked capability acceptance criteria are satisfied for all in-scope scenarios.
+- [ ] Happy paths, alternate flows, and failure paths are defined for in-scope runtime behavior.
+- [ ] Contracts are complete enough to implement commands, queries, events, inputs, outputs, errors, guarantees, and important retry or idempotency behavior.
+- [ ] Architecture assigns clear component responsibilities, boundaries, and interactions for all in-scope capabilities.
+- [ ] Operational expectations are defined for release, rollback, observability, troubleshooting, and support-critical failure handling.
+- [ ] Quality checks are mapped to capabilities, NFRs, and critical invariants.
+- [ ] Traceability is current across goals, scenarios, capabilities, contracts, components, checks, and ADRs.
+- [ ] Critical placeholders and open questions that would force core design invention are resolved.
+- [ ] At least two accepted ADRs capture structural decisions with long-term impact.
+- [ ] Reviewers judge the repo implementation-ready for human and LLM handoff.
 
 ## Non-Functional Requirements
 | NFR ID | Requirement | Measure | Notes |
@@ -37,11 +47,19 @@ open_questions:
 | `CHK-001` | `[TBD]` | `CAP-001`, `NFR-001` | `[TBD]` |
 | `CHK-002` | `[TBD]` | `CAP-002`, `NFR-002` | `[TBD]` |
 
+## Handoff Review Questions
+- [ ] Could an implementer describe all in-scope user and system flows from the repo alone?
+- [ ] Could an implementer identify component responsibilities and boundaries without inventing missing structure?
+- [ ] Could an implementer build the main contracts and failure handling paths without hidden assumptions?
+- [ ] Could an implementer define stack-specific tests from the checks and NFRs already captured here?
+- [ ] Does any unresolved placeholder or open question still block a credible implementation start?
+
 ## Review Checklist
 - [ ] Goals, scenarios, capabilities, contracts, and architecture stay aligned.
 - [ ] Failure paths and operational implications are documented.
 - [ ] Decisions with long-term impact are captured in ADRs.
 - [ ] Traceability rows exist for all active artifacts.
+- [ ] The implementation handoff is credible for both humans and LLMs.
 
 ## Inputs
 - Capabilities from `design/04-capabilities.md`.

@@ -14,6 +14,7 @@
 - The actual product produced by the DOS is a project-specific instance repository.
 - An instance repository is created from `dos/instance-seed/`.
 - That instance becomes the working space where developers and LLMs collaborate to design and implement a specific product end to end.
+- The instance is not only a design package; it is the default long-lived repo for the product, beginning in `design/` and continuing into `implementation/` after Gate 2.
 
 ## Product Standard For An Instance
 - A completed instance must let a capable developer or LLM read the repository and understand:
@@ -25,12 +26,14 @@
   - what contracts and architectural boundaries exist,
   - what quality and operational expectations must be met.
 - A completed instance should be implementation-ready enough that a capable LLM can implement the product end to end in a chosen stack with minimal guessing.
+- The hard readiness bar for that handoff should live inside the instance itself, primarily in `design/07-quality.md`.
 
 ## Default Lifecycle
 - The default lifecycle stays in one repo.
 - The instance starts in a design-first phase under `design/`.
 - Product code begins after Gate 2 under `implementation/`.
 - `design/` remains the source of truth while `implementation/` evolves.
+- Gate 2 means the repo is ready to begin implementation in that same repo, not merely that coding is permitted in principle.
 
 ## Collaboration Model
 - Humans and LLMs use the same artifact spine as a shared working medium.

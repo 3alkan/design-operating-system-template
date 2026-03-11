@@ -29,6 +29,7 @@ open_questions:
 ## Change Impact Notes
 - Update this matrix whenever a goal, scenario, capability, contract, component, check, or ADR changes.
 - A structural change is not review-ready until traceability is updated.
+- After Gate 2, structural implementation changes must still map back to rows in this matrix through the affected design artifacts.
 
 ## Inputs
 - All artifacts from `design/01` through `design/08`.
@@ -36,6 +37,7 @@ open_questions:
 
 ## Outputs
 - A machine-checkable and review-friendly dependency map for the design.
+- The minimum cross-artifact map needed to keep `design/` and `implementation/` aligned after Gate 2.
 
 ## Assumptions
 - Every in-scope goal should be represented by at least one row in the matrix.

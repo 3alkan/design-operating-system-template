@@ -1,8 +1,8 @@
 # Design Operating System
 
-Tech-stack-independent Design Operating System (DOS) for producing product-design repositories that are abstractly implementation-ready.
+Tech-stack-independent Design Operating System (DOS) for producing product repositories that begin design-first and become implementation-ready in the same repo.
 
-Current DOS version: `0.8.0`
+Current DOS version: `0.9.0`
 
 ## What This Repo Owns
 - The canonical DOS source.
@@ -10,13 +10,13 @@ Current DOS version: `0.8.0`
 - DOS reference and teaching assets.
 - DOS integrity and instantiation tooling.
 
-This repository improves, documents, and packages the DOS. It is not the actual product-design repository that downstream builders work in.
+This repository improves, documents, and packages the DOS. It is not the actual product repository that downstream builders work in.
 
 ## What The DOS Produces
 - The actual product produced by the DOS is a project-specific instance repository.
 - That instance is materialized from `dos/instance-seed/`.
-- The instance is where developers and LLMs collaborate to design and implement a product end to end.
-- The target state is a stack-independent but implementation-ready design repo that a capable LLM can use to implement the product end to end with minimal guessing.
+- The instance is where developers and LLMs collaborate to design and implement one product end to end.
+- The target state is a stack-independent but implementation-ready repo whose `design/` artifacts constrain the product clearly enough that a capable LLM can implement the product end to end with minimal guessing.
 
 ## DOS Model
 - `dos/instance-seed/` is the copyable downstream design package.
@@ -29,6 +29,7 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 ## Mission
 - The canonical DOS mission is defined in `docs/DOS_MISSION.md`.
 - That mission governs how the DOS package, repo shell, instance seed, and reference material should evolve.
+- The packaged instance defines its implementation-readiness contract primarily in `dos/instance-seed/design/07-quality.md`.
 
 ## How To Use The DOS
 1. Read `docs/DOS_MISSION.md`.
@@ -37,7 +38,7 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 4. Inspect `dos/patterns/` and `dos/reference/` as teaching material, not as downstream product scope by default.
 5. Regenerate `dos/dos-manifest.json` with `python scripts/build_dos_manifest.py` whenever the frozen package changes.
 6. Materialize a downstream repo with `python scripts/instantiate_dos.py --target <path> --instance-name <name> --design-version <x.y.z>`.
-7. Fill `design/`, reach Gate 2, and start product code in `implementation/`.
+7. Fill `design/`, use `design/07-quality.md` as the completion bar, reach Gate 2, and start product code in `implementation/`.
 
 ## Repository Structure
 - `dos/`
@@ -60,6 +61,7 @@ The repo root belongs to the DOS itself. A downstream instance is created from `
 - Review `dos/instance-seed/` when changing the packaged downstream product repo.
 - Review `dos/patterns/` and `dos/reference/` when changing teaching/reference material.
 - Review `dos/dos-manifest.json` whenever the frozen DOS package changes.
+- Review `dos/instance-seed/design/07-quality.md` whenever the instance implementation-readiness standard changes.
 
 ## Mermaid-Only Diagrams
 - Diagrams must be embedded in Markdown fenced blocks using ` ```mermaid `.

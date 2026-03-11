@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for improving this product-design instance.
+Thanks for improving this product instance.
 
 ## How To Propose Changes
 1. Open an issue using the forms in `.github/ISSUE_TEMPLATE/`.
@@ -11,6 +11,7 @@ Thanks for improving this product-design instance.
 - No product/application code is allowed before Gate 2.
 - Product/application code is allowed after Gate 2.
 - `design/` remains the source of truth, and structural code changes in `implementation/` must update the relevant artifacts and traceability rules together.
+- `design/07-quality.md` defines the implementation-readiness bar and should be updated if the handoff standard changes.
 - Placeholder tokens such as `[PROJECT_NAME]`, `[PROJECT_DESCRIPTION]`, `[PROJECT_CONTACT_EMAIL]`, `INSTANCE_DESIGN_VERSION`, `PRODUCT_VERSION`, `[TBD]`, `[ASSUMPTION]`, and `[OPEN QUESTION]` may remain only where the authoring conventions allow them.
 
 ## Authoring Rules
@@ -19,3 +20,4 @@ Thanks for improving this product-design instance.
 - Assign stable artifact IDs and maintain `related_ids`.
 - Use Mermaid-only diagrams in fenced ` ```mermaid ` blocks.
 - Keep prose concrete enough for implementation without fixing a stack prematurely.
+- Write design artifacts so implementers can choose a stack without inventing missing core behavior, boundaries, or contracts.

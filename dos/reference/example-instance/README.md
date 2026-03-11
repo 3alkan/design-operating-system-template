@@ -13,4 +13,5 @@ It is frozen DOS reference and teaching material for humans and LLMs. It demonst
 - Demonstrates the quality bar for a completed instance.
 - Shows how goals, scenarios, capabilities, contracts, architecture, ADRs, quality, and operations connect.
 - Shows the intended same-repo lifecycle: `design/` as source of truth and `implementation/` as the post-Gate-2 code location.
+- Shows how `design/07-quality.md` acts as the governing implementation-readiness contract for a completed instance.
 - Serves as a benchmark for manual DOS review and future DOS changes.
