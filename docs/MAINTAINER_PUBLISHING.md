@@ -11,7 +11,7 @@
 - [ ] `README.md` reflects the DOS package boundary and instantiation model.
 - [ ] `AGENTS.md` and `dos/instance-seed/docs/10-authoring-conventions.md` are aligned.
 - [ ] The frozen package under `dos/` is internally consistent.
-- [ ] `dos/dos-manifest.json` matches the current `dos/` package and hash.
+- [ ] `dos/dos-manifest.json` matches the current `dos/` package, `hash_algorithm`, and package hash.
 - [ ] The reference example is complete and still serves as DOS teaching material.
 - [ ] The repo shell still reads coherently as the canonical DOS repo.
 - [ ] `.github/` issue and PR forms reflect artifact IDs and traceability impact.
@@ -25,5 +25,6 @@
 ## Release Discipline
 - Update `CHANGELOG.md` when the DOS structure, review model, or collaboration workflow change materially.
 - Regenerate `dos/dos-manifest.json` with `python scripts/build_dos_manifest.py` whenever the frozen `dos/` package changes.
+- Confirm the manifest still records the intended integrity algorithm before tagging a release.
 - Create an annotated Git tag in the format `vX.Y.Z` after the release commit is finalized.
 - Publish only after manual artifact-consistency review is complete.

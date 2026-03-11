@@ -33,7 +33,7 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 
 ### [0.4.0] - 2026-03-11
 #### Added
-- Canonical frozen DOS package under `dos/`, including `dos/instance-seed/`, `dos/patterns/`, `dos/reference/`, and `dos/dos-manifest.json`.
+- Canonical frozen DOS package under `dos/`, including `dos/instance-template/`, `dos/patterns/`, `dos/reference/`, and `dos/dos-manifest.json`.
 - Instance materialization tooling in `scripts/instantiate_dos.py`.
 - DOS manifest generation tooling in `scripts/build_dos_manifest.py`.
 - Downstream instance lineage contract via `INSTANCE_METADATA.json`.
