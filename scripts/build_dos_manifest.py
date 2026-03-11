@@ -11,6 +11,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DOS_ROOT = REPO_ROOT / "dos"
 MANIFEST_PATH = DOS_ROOT / "dos-manifest.json"
+HASHLIB_NAME = "sha3_256"
+HASH_LABEL = "sha3-256"
+FILE_HASH_FIELD = "sha3_256"
 
 
 def read_dos_version() -> str:
@@ -32,8 +35,8 @@ def iter_package_files() -> list[Path]:
     return sorted(files)
 
 
-def sha256_bytes(data: bytes) -> str:
-    return hashlib.sha256(data).hexdigest()
+def hash_bytes(data: bytes) -> str:
+    return hashlib.new(HASHLIB_NAME, data).hexdigest()
 
 
 def build_inventory(files: list[Path]) -> list[dict[str, object]]:
@@ -43,7 +46,7 @@ def build_inventory(files: list[Path]) -> list[dict[str, object]]:
         inventory.append(
             {
                 "path": path.relative_to(REPO_ROOT).as_posix(),
-                "sha256": sha256_bytes(content),
+                FILE_HASH_FIELD: hash_bytes(content),
                 "bytes": len(content),
             }
         )
@@ -51,15 +54,15 @@ def build_inventory(files: list[Path]) -> list[dict[str, object]]:
 
 
 def package_hash(inventory: list[dict[str, object]]) -> str:
-    hasher = hashlib.sha256()
+    hasher = hashlib.new(HASHLIB_NAME)
     for item in inventory:
         hasher.update(str(item["path"]).encode("utf-8"))
         hasher.update(b"\0")
-        hasher.update(str(item["sha256"]).encode("utf-8"))
+        hasher.update(str(item[FILE_HASH_FIELD]).encode("utf-8"))
         hasher.update(b"\0")
         hasher.update(str(item["bytes"]).encode("utf-8"))
         hasher.update(b"\0")
-    return f"sha256:{hasher.hexdigest()}"
+    return f"{HASH_LABEL}:{hasher.hexdigest()}"
 
 
 def build_manifest(released_at: str | None, release_tag: str | None) -> dict[str, object]:
@@ -71,6 +74,7 @@ def build_manifest(released_at: str | None, release_tag: str | None) -> dict[str
         "dos_version": dos_version,
         "dos_release_tag": release_tag or f"v{dos_version}",
         "released_at": released_at or date.today().isoformat(),
+        "hash_algorithm": HASH_LABEL,
         "instance_seed_root": "dos/instance-seed",
         "reference_root": "dos/reference",
         "copy_paths": ["dos/instance-seed"],

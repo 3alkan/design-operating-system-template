@@ -20,6 +20,11 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 #### Fixed
 - [TBD]
 
+### [0.6.0] - 2026-03-11
+#### Changed
+- Switched DOS package integrity hashing from `SHA-256` to `SHA3-256`.
+- Updated `dos/dos-manifest.json` to record `hash_algorithm` and `sha3_256` file hashes.
+
 ### [0.5.0] - 2026-03-11
 #### Changed
 - Removed GitHub-template positioning from the canonical DOS repo and aligned publishing guidance with the DOS package flow.
