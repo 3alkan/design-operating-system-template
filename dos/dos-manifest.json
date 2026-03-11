@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
-  "dos_version": "0.6.0",
-  "dos_release_tag": "v0.6.0",
+  "dos_version": "0.7.0",
+  "dos_release_tag": "v0.7.0",
   "released_at": "2026-03-11",
   "hash_algorithm": "sha3-256",
   "instance_seed_root": "dos/instance-seed",
@@ -43,8 +43,8 @@
     },
     {
       "path": "dos/instance-seed/AGENTS.md",
-      "sha3_256": "ad8e8084493dd7962cc6b58d409fb2983ce67ad2d182f49438af9912b16ac0a8",
-      "bytes": 2689
+      "sha3_256": "a12de0d8e5e99e13e4e7ff003b923311133dc53ba784f1a4a30124471c3f4492",
+      "bytes": 2811
     },
     {
       "path": "dos/instance-seed/CONTRIBUTING.md",
@@ -123,8 +123,8 @@
     },
     {
       "path": "dos/instance-seed/README.md",
-      "sha3_256": "2562017738d4dfcd500955688674a5bfb8e103df1257caf66d9b4077870e20de",
-      "bytes": 886
+      "sha3_256": "70f4f34efcfd022df2a486a15d6a4ef2405e1eacebbb08d2e7f7f4ba36b91243",
+      "bytes": 1392
     },
     {
       "path": "dos/instance-seed/VERSION",
@@ -262,5 +262,5 @@
       "bytes": 384
     }
   ],
-  "dos_package_hash": "sha3-256:1d4c52aa7e834b04c1fd4034b513023de76571e4d05b8836819aef2366abd997"
+  "dos_package_hash": "sha3-256:450177d4f296acc1f6d9295636b5c1408a875dcb7334e912332d87ffc018691b"
 }

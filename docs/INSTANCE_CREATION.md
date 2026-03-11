@@ -2,6 +2,8 @@
 
 Use this guide to create a downstream product-design repo from the canonical DOS package.
 
+The DOS repo is the source and packaging surface for the system. The actual working product for users, developers, and LLMs is the instance repository created from it.
+
 ## Lifecycle Model
 - Canonical DOS repo: this repository, which owns the frozen package under `dos/`.
 - Frozen DOS package: the versioned package boundary defined by `dos/` and `dos/dos-manifest.json`.
@@ -34,6 +36,7 @@ Optional instantiation inputs:
 - After materialization, the downstream repo root belongs to the instance.
 - The instance keeps its own `VERSION`, `INSTANCE_METADATA.json`, `README.md`, `AGENTS.md`, `.github/`, and `docs/`.
 - The instance should not carry DOS publishing guides or DOS teaching material unless explicitly copied later.
+- The instance is the actual product-design repository that should enable human and LLM collaboration toward implementation.
 
 ## Ready For Implementation Gate
 - [ ] Core artifacts `01` through `09` contain project-specific content.

@@ -20,6 +20,14 @@ The format follows Keep a Changelog and this DOS repo uses Semantic Versioning f
 #### Fixed
 - [TBD]
 
+### [0.7.0] - 2026-03-11
+#### Added
+- Canonical DOS mission document in `docs/DOS_MISSION.md`.
+
+#### Changed
+- Rewrote the root README and shell guidance around the explicit DOS mission and boundary.
+- Strengthened the packaged instance entry surfaces so they read as a real product-design repository rather than package scaffolding.
+
 ### [0.6.0] - 2026-03-11
 #### Changed
 - Switched DOS package integrity hashing from `SHA-256` to `SHA3-256`.

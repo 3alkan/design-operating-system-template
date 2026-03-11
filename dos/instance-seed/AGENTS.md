@@ -2,6 +2,8 @@
 
 This repository is a product-design instance. Root artifacts are the source of truth between architect, Codex, developers, and collaborating LLMs.
 
+The purpose of this repository is to define one product end to end in a stack-independent but implementation-ready form.
+
 ## Source of Truth (Instance Artifact Spine)
 - `docs/00-system-purpose.md`: product mission, usage modes, completion standard.
 - `docs/01-product-scope.md`: actors, problems, goals, constraints, non-goals.

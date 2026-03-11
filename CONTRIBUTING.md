@@ -13,6 +13,7 @@ Thanks for improving the DOS.
 - Keep root-level changes focused on DOS package content, publishing guidance, reference material, and tooling.
 - Contributions must preserve stack independence.
 - The frozen package under `dos/` remains the source of truth, and structural changes must update the relevant package assets together.
+- Changes to DOS goals, boundary, or success criteria must update `docs/DOS_MISSION.md` and any affected repo-shell files.
 - Placeholder tokens inside `dos/instance-seed/` may remain only where the seed authoring conventions allow them.
 
 ## Authoring Rules

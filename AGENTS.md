@@ -4,6 +4,7 @@ This repository is the canonical Design Operating System (DOS) repo. It is not a
 
 ## Source Of Truth (DOS Repo)
 
+- `docs/DOS_MISSION.md`: canonical DOS goal, boundary, and success criteria.
 - `dos/instance-seed/docs/00-system-purpose.md` through `dos/instance-seed/docs/10-authoring-conventions.md`: the downstream instance artifact contract.
 - `dos/instance-seed/docs/adr/`: ADR starters and ADR guidance that ship with downstream instances.
 - `dos/patterns/`: frozen DOS reference patterns.
@@ -22,6 +23,7 @@ If repo shell docs and `dos/` conflict, `dos/` wins until updated.
   - `dos/instance-seed/`, `dos/patterns/`, and `dos/reference/` match the intended DOS release.
   - `dos/dos-manifest.json` matches the frozen package contents.
 - Gate 2 (DOS Release Ready)
+  - `docs/DOS_MISSION.md`, `README.md`, and repo shell guidance reflect the current DOS goal and boundary.
   - Repo shell docs and contributor surfaces reflect the current DOS package.
   - `VERSION`, `CHANGELOG.md`, and `dos/dos-manifest.json` are aligned.
   - Review evidence and any configured CI checks pass.
@@ -30,6 +32,7 @@ Downstream implementation-readiness gates belong to `dos/instance-seed/AGENTS.md
 
 ## Artifacts Are The Contract
 - Any change to downstream design structure must update the relevant files under `dos/instance-seed/`.
+- Any change to DOS goals, boundary, or success criteria must update `docs/DOS_MISSION.md` and any affected root-level DOS files.
 - Any change to DOS repo shell behavior, publishing flow, or contributor workflow must update the relevant root-level DOS files.
 - Any change to DOS teaching/reference material must update the relevant files under `dos/patterns/` or `dos/reference/`.
 - Fixed structural decisions that ship with downstream instances must be recorded in `dos/instance-seed/docs/adr/`.
